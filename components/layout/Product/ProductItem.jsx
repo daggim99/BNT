@@ -29,9 +29,8 @@ const ProductItem = () =>
     const { left } = product
 
     const logo = {
-      zIndex: '1000',
       backgroundImage: `url('images/Logo/${
-        left ? 'freshcoLogo.svg' : 'degalogo.svg'
+        left ? 'freshcoLogo.svg' : 'degaLogo.svg'
       }')`,
       backgroundOrigin: 'border',
       backgroundClip: 'border',
