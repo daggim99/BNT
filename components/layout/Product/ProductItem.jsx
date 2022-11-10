@@ -30,7 +30,7 @@ const ProductItem = () =>
 
     const logo = {
       backgroundImage: `url('/images/Logo/${
-        left ? 'freshcologo.svg' : 'degaLogo.svg'
+        left ? 'freshcoLogo.svg' : 'degaLogo.svg'
       }')`,
       backgroundOrigin: 'border',
       backgroundClip: 'border',
