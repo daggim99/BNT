@@ -104,7 +104,7 @@ export default function Navbar(index) {
             <div className="space-y-1 px-2 pt-2 pb-3 text-white">
               {navigation.map((item, inx) => (
                 <Disclosure.Button
-                  as="a"
+                  as="Link"
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleActiveLink(inx)}
