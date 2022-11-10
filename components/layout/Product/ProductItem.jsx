@@ -31,7 +31,9 @@ const ProductItem = () =>
     const { left } = product
 
     const logo = {
-      backgroundImage: `url('/images/Logo/${left && 'freshcologo.svg'}'
+      zIndex: '1000',
+      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.2), rgb(28, 10, 0, 0.2)), url('/images/Logo/${
+        left ? 'LogoFreshco.svg' : 'degaLogo.svg'
       }')`,
       backgroundOrigin: 'border',
       backgroundClip: 'border',
@@ -61,7 +63,7 @@ const ProductItem = () =>
           style={logo}
           className={`${
             left ? 'border-[#FFF1C9]' : 'border-[#DAF4F6]'
-          } my-6 bg-[url("/images/Icons/WaterIcon.png")] peer-hover:blur-sm z-50 lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
+          } my-6 peer-hover:blur-sm lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
         />
         <div className="row-start-2 row-span-1 justify-self-center self-center text-center  text-white">
           <h2 className="card-title text- white font-lato-n900 text-5xl">
