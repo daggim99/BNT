@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -22,6 +23,7 @@ function classNames(...classes) {
 export default function Navbar(index) {
   const [active, setActive] = useState(navigation)
 
+  const router = useRouter()
   const handleActiveLink = (i) => {
     active.forEach((element) => (element.current = false))
 
@@ -102,7 +104,7 @@ export default function Navbar(index) {
             <div className="space-y-1 px-2 pt-2 pb-3 text-white">
               {navigation.map((item, inx) => (
                 <Disclosure.Button
-                  as="Link"
+                  as="a"
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleActiveLink(inx)}

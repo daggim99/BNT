@@ -29,9 +29,8 @@ const ProductItem = () =>
     const { left } = product
 
     const logo = {
-      zIndex: '1000',
-      backgroundImage: `url('images/Logo/${
-        left ? 'freshcoLogo.svg' : 'degalogo.svg'
+      backgroundImage: `url('/images/Logo/${
+        left ? 'freshcologo.svg' : 'degaLogo.svg'
       }')`,
       backgroundOrigin: 'border',
       backgroundClip: 'border',
@@ -41,7 +40,7 @@ const ProductItem = () =>
     }
 
     const style = {
-      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.7), rgb(28, 10, 0, 0.7)), url('images/Products/${
+      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.7), rgb(28, 10, 0, 0.7)), url('/images/Products/${
         left ? 'freshcoImage.png' : 'degaImage.png'
       }')`,
       backgroundOrigin: 'border',
