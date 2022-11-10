@@ -1,3 +1,5 @@
+'use client'
+
 import Navbar from '../components/layout/Navbar/Navbar'
 import Footer from '../components/layout/Footer/Footer'
 import Badge from '../components/UI/Button/Badge'
