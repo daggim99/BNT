@@ -1,35 +1,24 @@
 'use client'
 
-import { useState } from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useSelector, useDispatch } from 'react-redux'
 
-export const navigation = [
-  { name: 'Home', href: '/', current: true, index: 0 },
-  { name: 'About', href: '/about', current: false, index: 1 },
-  { name: 'Blog', href: '/blog', current: false, index: 2 },
-  { name: 'Contact Us', href: '/contact', current: false, index: 3 },
-]
+import { navigationActions } from '../../../store/slices/navigation.slice'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar(index) {
-  const [active, setActive] = useState(navigation)
+  const navigation = useSelector((state) => state.navigation)
+  const dispatch = useDispatch()
 
-  const router = useRouter()
-  const handleActiveLink = (i) => {
-    active.forEach((element) => (element.current = false))
-
-    const activeLinkIndex = active.findIndex((element) => element.index === i)
-
-    active[activeLinkIndex].current = true
+  const handleNavigation = (to) => {
+    dispatch(navigationActions.navigate(to))
   }
 
   return (
@@ -69,8 +58,8 @@ export default function Navbar(index) {
                     className="hidden lg:block"
                   >
                     <Image
-                      width="140"
-                      height="140"
+                      width="70"
+                      height="70"
                       src="/images/Logo/Logo.svg"
                       alt="Your Company"
                     />
@@ -82,7 +71,7 @@ export default function Navbar(index) {
                       <Link
                         href={item.href}
                         key={item.name}
-                        onClick={(e) => handleActiveLink(inx)}
+                        onClick={(e) => handleNavigation(inx)}
                         className={classNames(
                           item.current
                             ? 'bg-gray-900 text-white font-montserrat-n600 text-xl'
@@ -102,23 +91,25 @@ export default function Navbar(index) {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 text-white">
-              {navigation.map((item, inx) => (
-                <Disclosure.Button
-                  as="Link"
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleActiveLink(inx)}
-                  className={classNames(
-                    item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-white hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium',
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              <div>
+                {navigation.map((item, inx) => (
+                  <Link key={item.name} href={item.href}>
+                    <Disclosure.Button
+                      as="a"
+                      onClick={(e) => handleNavigation(inx)}
+                      className={classNames(
+                        item.current
+                          ? 'bg-gray-900 text-white'
+                          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'block px-3 py-2 rounded-md text-base font-medium',
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  </Link>
+                ))}
+              </div>
             </div>
           </Disclosure.Panel>
         </>

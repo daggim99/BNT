@@ -1,24 +1,20 @@
 import React, { useState } from 'react'
 
 import Link from 'next/link'
+import { useSelector, useDispatch } from 'react-redux'
 
+import { navigationActions } from '../../../store/slices/navigation.slice'
 import Logo from '../Logo/Logo'
 
-import { navigation } from '../Navbar/Navbar'
+// import { navigation } from '../Navbar/Navbar'
 
 const FooterNav = () => {
-  const [active, setActive] = useState(navigation)
+  // const [active, setActive] = useState(navigation)
+  const navigation = useSelector((state) => state.navigation)
+  const dispatch = useDispatch()
 
-  const handleActiveLink = (index) => {
-    active.forEach((element) => {
-      element.current = false
-    })
-
-    const activeLinkIndex = active.findIndex(
-      (element) => element.index === index,
-    )
-
-    active[activeLinkIndex].current = true
+  const handleActiveLink = (to) => {
+    dispatch(navigationActions.navigate(to))
   }
 
   return (

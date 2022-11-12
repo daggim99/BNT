@@ -3,20 +3,21 @@
 import { useState } from 'react'
 
 import Link from 'next/link'
+import { useSelector, useDispatch } from 'react-redux'
 
-import { navigation } from '../../layout/Navbar/Navbar'
+import { navigationActions } from '../../../store/slices/navigation.slice'
+
+// import { navigation } from '../../layout/Navbar/Navbar'
 
 const Button = (props) => {
   const { className, title, link, to } = props
 
-  const [active, setActive] = useState(navigation)
+  // const [active, setActive] = useState(navigation)
+  const navigation = useSelector((state) => state.navigation)
+  const dispatch = useDispatch()
 
-  const handleActiveLink = (i) => {
-    active.forEach((element) => (element.current = false))
-
-    const activeLinkIndex = active.findIndex((element) => element.index === i)
-
-    active[activeLinkIndex].current = true
+  const handleActiveLink = (to) => {
+    dispatch(navigationActions.navigate(to))
   }
 
   if (link)
