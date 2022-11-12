@@ -1,5 +1,8 @@
 'use client'
 
+import { Provider } from 'react-redux'
+import store from '../store/store'
+
 import Navbar from '../components/layout/Navbar/Navbar'
 import Footer from '../components/layout/Footer/Footer'
 import Badge from '../components/UI/Button/Badge'
@@ -15,10 +18,12 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <Navbar />
-        <Badge />
-        {children}
-        <Footer />
+        <Provider store={store}>
+          <Navbar />
+          <Badge />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   )
