@@ -5,6 +5,14 @@
 /.pnp
 .pnp.js
 
+# editor
+/.idea
+/.idea/
+.idea/
+.idea
+
+
+
 # testing
 /coverage
 
