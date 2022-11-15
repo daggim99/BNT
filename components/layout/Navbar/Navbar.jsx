@@ -45,10 +45,10 @@ export default function Navbar(index) {
                 <figure className="transition-d justify-self-center hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105">
                   <Link href="/" className="block lg:hidden">
                     <Image
-                      width="70"
-                      height="70"
+                      width="120"
+                      height="120"
                       className="p-0"
-                      src="/images/Logo/Logo.svg"
+                      src="/images/Logo/BNTLogo.svg"
                       alt="Your Company"
                     />
                   </Link>
@@ -58,9 +58,9 @@ export default function Navbar(index) {
                     className="hidden lg:block"
                   >
                     <Image
-                      width="70"
-                      height="70"
-                      src="/images/Logo/Logo.svg"
+                      width="120"
+                      height="120"
+                      src="/images/Logo/BNTLogo.svg"
                       alt="Your Company"
                     />
                   </Link>
