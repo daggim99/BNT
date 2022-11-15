@@ -15,7 +15,6 @@ const navigationSlice = createSlice({
   reducers: {
     navigate(state, action) {
       state.forEach((element) => (element.current = false))
-      console.log('state = ' + state)
 
       const activeLinkIndex = state.findIndex(
         (element) => element.index === action.payload,
