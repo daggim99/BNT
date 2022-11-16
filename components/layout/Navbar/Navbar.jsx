@@ -45,8 +45,8 @@ export default function Navbar(index) {
                 <figure className="transition-d justify-self-center hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105">
                   <Link href="/" className="block lg:hidden">
                     <Image
-                      width="120"
-                      height="120"
+                      width="100"
+                      height="100"
                       className="p-0"
                       src="/images/Logo/BNTLogo.svg"
                       alt="Your Company"
@@ -58,8 +58,8 @@ export default function Navbar(index) {
                     className="hidden lg:block"
                   >
                     <Image
-                      width="120"
-                      height="120"
+                      width="100"
+                      height="100"
                       src="/images/Logo/BNTLogo.svg"
                       alt="Your Company"
                     />
