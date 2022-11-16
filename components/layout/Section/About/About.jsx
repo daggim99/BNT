@@ -3,10 +3,7 @@ import Section from '../Section'
 const About = () => (
   <Section
     title="About Us"
-    text="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-    cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-    aliqua.    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-   "
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis."
     className={{
       card: 'h-screen sm:h-[65vh] row-start-5 row-span-1 lg:row-start-4',
       cardTitle: 'justify-self-center self-end',
