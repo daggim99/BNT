@@ -2,7 +2,7 @@ import { bottom } from '@popperjs/core'
 
 const AboutHero = () => {
   const style = {
-    backgroundImage: `linear-gradient(to bottom, rgba(255, 241, 201, 0.1),  rgba(255, 236, 177, 0.1)), url('/images/About/hero-pattern-1.png')`,
+    backgroundImage: `linear-gradient(to bottom, rgba(255, 241, 201, 0.5),  rgba(255, 236, 177, 0.5)), url('/images/About/hero-pattern-1.png')`,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -21,7 +21,7 @@ const AboutHero = () => {
         className="w-[100%] h-[100%] col-start-2 col-span-1 row-start-1 row-end-2"
       />
       <div className="col-start-1 col-end-3 justify-self-center self-center row-start-1 row-end-2">
-        <h1 className="lg:mb-6 leading-[110.4px] font-lato-n900 text-4xl md:text-6xl lg:text-[92px] text-[#525252] text-center">
+        <h1 className="lg:mb-2 lg:mt-9 leading-[110.4px] font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[72px] text-[#525252] text-center">
           About Us
         </h1>
         <p className="lg:pt-6 leading-[34.84px] text-base md:text-lg lg:text-[20px] font-roboto text-center text-[#808080] px-6 md:px-44 lg:px-72">
