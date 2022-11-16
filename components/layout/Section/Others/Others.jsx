@@ -47,13 +47,13 @@ export const businesses = [
 
 export const Others = () => {
   return (
-    <ul className="h-[36vh] md:h-[24vh] lg:h-[16vh] overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-2">
+    <ul className="h-[36vh] md:h-[24vh] lg:h-[16vh] overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-0">
       {businesses.map((business) => {
         const { id, title, colStart, colEnd } = business
         return (
           <li
             key={id}
-            className={`transition-d lg:col-start-${colStart} lg:col-end-${colEnd} self-stretch text-center align-middle justify-self-stretch p-3 md:p-6 font-roboto-n500 text-sm sm:text-base hover:scale-95 hover:text-base hover:bg-slate-50`}
+            className={`transition-d lg:col-start-${colStart} lg:col-end-${colEnd} text-center align-middle justify-self-center p-1 self-center font-roboto-n500 text-[16px] text-[#636363] font-bold px-0  hover:scale-95 hover:text-base hover:bg-slate-50`}
           >
             {title}
           </li>

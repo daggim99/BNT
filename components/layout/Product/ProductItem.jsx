@@ -1,23 +1,16 @@
-import Image from 'next/image'
-
 import Button from '../../UI/Button/Button'
-
-import product_1 from '../../../public/images/Products/freshcoImage.png'
-import product_2 from '../../../public/images/Products/degaImage.png'
-import logo_1 from '../../../public/images/Logo/freshcoLogo.svg'
-import logo_2 from '../../../public/images/Logo/degaLogo.svg'
 
 const products = [
   {
     id: 'p1',
     title: 'Freshco',
-    text: 'Lorem ipsum dolor sit ament, consectetur dehiscing Elia. Quietus nill eros, pulling facility justed Hollis, Auster consent ursa. Moral a addendum meatus.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.',
     left: true,
   },
   {
     id: 'p2',
     title: 'Dega Water',
-    text: 'Lorem ipsum dolor sit ament, consectetur dehiscing Elia. Quietus nill eros, pulling facility justed Hollis, Auster consent ursa. Moral a addendum meatus.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.',
     left: false,
   },
 ]
@@ -32,18 +25,18 @@ const ProductItem = () =>
 
     const logo = {
       zIndex: '1000',
-      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.2), rgb(28, 10, 0, 0.2)), url('/images/Logo/${
+      backgroundImage: `url('/images/Logo/${
         left ? 'LogoFreshco.svg' : 'degaLogo.svg'
       }')`,
       backgroundOrigin: 'border',
       backgroundClip: 'border',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
-      backgroundSize: 'cover',
+      backgroundSize: 'contain',
     }
 
     const style = {
-      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.7), rgb(28, 10, 0, 0.7)), url('/images/Products/${
+      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.5), rgb(28, 10, 0, 0.5)), url('/images/Products/${
         left ? 'freshcoImage.png' : 'degaImage.png'
       }')`,
       backgroundOrigin: 'border',
@@ -57,26 +50,46 @@ const ProductItem = () =>
       <article
         style={style}
         key={product.id}
-        className={`${base} h-[65vh] md:h-full md:w-full grid grid-cols-[1fr] grid-rows-[min-content_1fr_min-content_1fr]`}
+        className={`${base} h-[65vh] md:h-full md:w-full grid grid-cols-[1fr] grid-rows-[min-content_min-content_min-content_1fr]`}
       >
         <figure
           style={logo}
           className={`${
             left ? 'border-[#FFF1C9]' : 'border-[#DAF4F6]'
-          } my-6 peer-hover:blur-sm lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
+          } bg-white my-6 peer-hover:blur-sm lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
         />
-        <div className="row-start-2 row-span-1 justify-self-center self-center text-center  text-white">
-          <h2 className="card-title text- white font-lato-n900 text-5xl">
+        <div className="row-start-2 row-span-1 justify-self-center self-start  text-white -mt-12">
+          <h2
+            className={`${
+              left ? 'text-center md:text-right' : 'text-center md:text-left'
+            } w-[240px] text-white font-lato-n900 font-bold lg:text-[40px]`}
+          >
             {product.title}
           </h2>
         </div>
-        <div className="row-start-3 row-span-1 justify-self-center self-center text-center  text-white px-12 py-3">
-          <p>{product.text}</p>
+        <div className="row-start-3 row-span-1 justify-self-center self-start text-white px-9 py-3">
+          <p
+            className={`${
+              left
+                ? 'text-center md:text-right lg:mr-6'
+                : 'text-center md:text-left lg:ml-6'
+            } text-[15px] w-[280px]`}
+          >
+            {product.text}
+          </p>
         </div>
-        <div className="card-actions row-start-4 row-span-1 justify-self-center  text-white self-center">
+        <div
+          className={`${
+            left
+              ? 'text-center md:text-right justify-self-center md:justify-self-end mr-0 md:mr-48'
+              : 'text-center md:text-left justify-self-center md:justify-self-start mr-0 md:ml-48'
+          } row-start-4 row-span-1   text-white self-center mt-9 mb-12`}
+        >
           <Button
             className={`${
-              left ? 'border-[#00D1FF]' : 'border-[#FFC107]'
+              left
+                ? 'border-[#00D1FF] text-center md:text-right'
+                : 'border-[#FFC107]'
             } bg-transparent  text-white text-base px-6 py-2`}
             title="Learn More"
           />

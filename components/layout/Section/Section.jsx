@@ -9,17 +9,17 @@ const Section = (props) => {
       className={`${card} grid grid-cols-[1fr] grid-rows-[1fr_min-content_1fr] w-screen`}
     >
       <h1
-        className={`row-start-1 row-end-2 sm:text-3xl md:text-6xl font-montserrat-n500 ${cardTitle}`}
+        className={`row-start-1 row-end-2 sm:text-4xl tracking-tighter font-lato-n900 font-extrabold md:text-[45px] text-black ${cardTitle}`}
       >
         {title}
       </h1>
       <p
-        className={`px-12 sm:px-14 md:px-40 lg:px-52 text-center row-start-2 sm:text-base md:text-lg row-end-3 font-raleway ${cardText}`}
+        className={`text-center row-start-2 row-end-3 text-[#BCBCBC] font-roboto text-[15px] leading-[24.84px] py-5 lg:px-72 ${cardText}`}
       >
         {text}
       </p>
       <Button
-        className={`cursor-pointer row-start-3 row-end-4 text-lg font-roboto-n500 ${cardButton.className}`}
+        className={`cursor-pointer row-start-3 py-2 row-end-4 text-lg text-[18px] font-roboto-n500 font-bold ${cardButton.className}`}
         title={cardButton.title}
         link={link}
         to={to}
