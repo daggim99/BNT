@@ -11,10 +11,16 @@ const AboutHero = () => {
   }
 
   return (
-    <section style={style} className="h-[55vh] grid grid-cols-[1fr_1fr]">
-      <div style={style} className="col-start-1 col-span-1" />
-      <div style={style} className="col-start-2 col-span-1" />
-      <div className="col-start-1 col-end-3 justify-self-center self-center">
+    <section className="h-[55vh] grid grid-cols-[1fr_1fr] grid-rows-1">
+      <div
+        style={style}
+        className="w-[100%] h-[100%] col-start-1 col-span-1 row-start-1 row-end-2"
+      />
+      <div
+        style={style}
+        className="w-[100%] h-[100%] col-start-2 col-span-1 row-start-1 row-end-2"
+      />
+      <div className="col-start-1 col-end-3 justify-self-center self-center row-start-1 row-end-2">
         <h1 className="lg:mb-6 leading-[110.4px] font-lato-n900 text-4xl md:text-6xl lg:text-[92px] text-[#525252] text-center">
           About Us
         </h1>
