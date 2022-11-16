@@ -41,8 +41,8 @@ export default function Navbar(index) {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 justify-center sm:justify-between w-screen m-0">
-                <figure className="transition-d justify-self-center hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105">
+              <div className="grid grid-cols-1 sm:grid-cols-2 justify-start sm:justify-between w-screen m-0">
+                <figure className="transition-d justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105">
                   <Link href="/" className="block lg:hidden">
                     <Image
                       width="100"
