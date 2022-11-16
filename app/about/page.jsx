@@ -1,9 +1,9 @@
-import UnderConstruction from './Player.component'
+import AboutHero from './Hero.Component'
 
 function About() {
   return (
     <>
-      <UnderConstruction />
+      <AboutHero />
     </>
   )
 }
