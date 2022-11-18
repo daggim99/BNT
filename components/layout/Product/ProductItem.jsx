@@ -2,8 +2,8 @@ import Image from 'next/Image'
 
 import Button from '../../UI/Button/Button'
 
-import img1 from '/public/images/Products/freshcoImage.png'
-import img2 from '/public/images/Products//degaImage.png'
+import img1 from '/images/Products/freshcoImage.png'
+import img2 from '/images/Products//degaImage.png'
 
 const products = [
   {
