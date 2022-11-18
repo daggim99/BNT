@@ -1,4 +1,9 @@
+import Image from 'next/Image'
+
 import Button from '../../UI/Button/Button'
+
+import img1 from '/public/images/Products/freshcoImage.png'
+import img2 from '/public/images/Products//degaImage.png'
 
 const products = [
   {
@@ -35,55 +40,62 @@ const ProductItem = () =>
       backgroundSize: 'contain',
     }
 
-    const style = {
-      backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.5), rgb(28, 10, 0, 0.5)), url('/images/Products/${
-        left ? 'freshcoImage.png' : 'degaImage.png'
-      }')`,
-      backgroundOrigin: 'border',
-      backgroundClip: 'border',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-    }
-
     return (
       <article
-        style={style}
         key={product.id}
-        className={`${base} h-[65vh] md:h-full md:w-full grid grid-cols-[1fr] grid-rows-[min-content_min-content_min-content_1fr]`}
+        className={`${base} group transition-d h-[65vh] md:h-full md:w-full grid grid-cols-[1fr_1fr] grid-rows-[min-content_min-content_min-content_1fr]`}
       >
+        <figure
+          className={`transition-d overflow-hidden peer filter brightness-75 blur-none group-hover:brightness-50 group-hover:blur-sm col-start-1 col-end-3 row-span-full transition-d relative peer hover:z-10 w-full h-full`}
+        >
+          <Image
+            src={left ? img1 : img2}
+            alt={left ? 'freshco' : 'dega'}
+            className={`transition-d w-full h-full block object-cover justify-self-center self-stretch group-hover:scale-105`}
+          />
+        </figure>
         <figure
           style={logo}
           className={`${
             left ? 'border-[#FFF1C9]' : 'border-[#DAF4F6]'
-          } bg-white my-6 peer-hover:blur-sm lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
+          } bg-white my-6 transition-d filter brightness-100 peer-hover:brightness-110 lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
         />
-        <div className="row-start-2 row-span-1 justify-self-center self-start  text-white -mt-12">
+        <div
+          className={`z-10 ${
+            left
+              ? 'col-start-1 col-end-2 justify-self-end'
+              : 'col-start-2 col-end-3 justify-self-start'
+          } transition-d filter brightness-100 peer-hover:brightness-200 row-start-2 row-span-1 self-start  text-white -mt-12`}
+        >
           <h2
             className={`${
               left ? 'text-center md:text-right' : 'text-center md:text-left'
-            } w-[240px] text-white font-lato-n900 font-bold lg:text-[40px]`}
+            } transition-d filter brightness-100 peer-hover:brightness-200 w-[240px] text-white font-lato-n900 font-bold lg:text-[40px]`}
           >
             {product.title}
           </h2>
         </div>
-        <div className="row-start-3 row-span-1 justify-self-center self-start text-white px-9 py-3">
+        <div
+          className={`z-10 ${
+            left
+              ? 'col-start-1 col-end-2 justify-self-center md:justify-self-end md:pr-0'
+              : 'col-start-2 col-end-3 justify-self-center md:justify-self-start md:pl-0'
+          } transition-d filter brightness-100 peer-hover:brightness-200 row-start-3 row-span-1 self-start text-white px-9 py-3 `}
+        >
           <p
-            className={`${
-              left
-                ? 'text-center md:text-right lg:mr-6'
-                : 'text-center md:text-left lg:ml-6'
+            className={`transition-d filter brightness-100 peer-hover:brightness-200 ${
+              left ? 'text-center md:text-right ' : 'text-center md:text-left'
             } text-[15px] w-[280px]`}
           >
             {product.text}
           </p>
         </div>
         <div
-          className={`${
+          className={`justify-self-center ${
             left
-              ? 'text-center md:text-right justify-self-center md:justify-self-end mr-0 md:mr-48'
-              : 'text-center md:text-left justify-self-center md:justify-self-start mr-0 md:ml-48'
-          } row-start-4 row-span-1   text-white self-center mt-9 mb-12`}
+              ? 'text-center md:text-right col-start-1 col-end-2 md:justify-self-end'
+              : 'text-center md:text-left col-start-2 col-end-3 md:justify-self-start'
+          } filter brightness-100 peer-hover:brightness-200 z-10 col-start-1 col-end-2 row-start-4 row-span-1   text-white self-center mt-9 mb-12`}
         >
           <Button
             className={`${
