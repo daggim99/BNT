@@ -19,7 +19,7 @@ const Section = (props) => {
         {text}
       </p>
       <Button
-        className={`cursor-pointer row-start-3 row-end-4 text-[20px] md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
+        className={`border-[3px] capitalize cursor-pointer row-start-3 row-end-4 text-[23px] md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
         title={cardButton.title}
         link={link}
         to={to}
