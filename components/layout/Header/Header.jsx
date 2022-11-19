@@ -19,18 +19,18 @@ const Header = () => {
   return (
     <header
       style={backgroundImage}
-      className={`h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.2fr)_1fr] gap-y-9`}
+      className={`h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
     >
       <div
         className={`row-start-1 row-span-1 align-end row-end-2 self-end justify-self-center lg:w-[764px]`}
       >
-        <h1 className="font-oswald-n700 text-white text-center font-bold text-4xl md:text-7xl lg:text-[90px]">
+        <h1 className="font-oswald-n700 text-white text-center font-bold text-4xl md:text-7xl lg:text-[100px]">
           <span className="text-[#EEBC43] md:font-lato-n900">BNT</span>{' '}
           Beverages
         </h1>
       </div>
       <div
-        className={`row-start-2 row-span-1 self-start justify-self-center text-center lg:w-[560px] `}
+        className={`row-start-2 row-span-1 self-start justify-self-center text-center lg:w-[560px] pb-9`}
       >
         <p className="leading-[23.44px] text-white text-sm sm:text-base md:text-[20px] font-roboto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
