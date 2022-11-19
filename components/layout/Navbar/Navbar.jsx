@@ -42,7 +42,7 @@ export default function Navbar(index) {
                 </Disclosure.Button>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-start sm:justify-between w-screen m-0">
-                <figure className="transition-d justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105">
+                <figure className="transition-d justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-12 lg:ml-20">
                   <Link href="/" className="block lg:hidden">
                     <Image
                       width="100"
@@ -65,7 +65,7 @@ export default function Navbar(index) {
                     />
                   </Link>
                 </figure>
-                <div className="hidden sm:ml-6 sm:block items-stretch justify-self-end">
+                <div className="hidden sm:ml-6 sm:block items-stretch justify-self-end self-center md:mr-12 lg:mr-20">
                   <div className="flex space-x-4">
                     {navigation.map((item, inx) => (
                       <Link

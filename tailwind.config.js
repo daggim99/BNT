@@ -92,6 +92,13 @@ module.exports = {
         'lato-i': ['Lato i', 'sans-serif'],
         'lato-i700': ['Lato i700', 'sans-serif'],
         'lato-i900': ['Lato i900', 'sans-serif'],
+
+        'oswald-n200': ['Oswald n200', 'sans-serif'],
+        'oswald-n300': ['Oswald n300', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
+        'oswald-n500': ['Oswald n500', 'sans-serif'],
+        'oswald-n600': ['Oswald n600', 'sans-serif'],
+        'oswald-n700': ['Oswald n700', 'sans-serif'],
       },
     },
   },

@@ -19,20 +19,19 @@ const Header = () => {
   return (
     <header
       style={backgroundImage}
-      className={`h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[1.3fr_repeat(2,_minmax(0.3fr,_0.6fr))_1fr] gap-1`}
+      className={`h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[1.3fr_repeat(2,_0.6fr)_1fr]`}
     >
-      <h1 className="mt-36 row-start-1 row-end-2 self-end justify-self-center font-lato-n900 text-white text-center text-4xl md:text-7xl lg:text-[90px] font-bold">
-        <span className="text-[#EEBC43] md:font-lato-n900 font-bold">BNT</span>{' '}
-        Beverages
+      <h1 className="mt-56 row-start-1 align-end row-end-2 self-end justify-self-center font-oswald-n700 text-white text-center lg:w-[764px] lg:h-[132px] text-4xl md:text-7xl lg:text-[90px]">
+        <span className="text-[#EEBC43] md:font-lato-n900">BNT</span> Beverages
       </h1>
-      <p className="justify-self-center self-center text-center leading-[23.44px] text-white text-sm sm:text-base md:text-[16px] px-20 md:px-39 lg:px-60 font-roboto py-2 ">
+      <p className="justify-self-center self-start text-center lg:w-[560px] lg:h-[46px] leading-[23.44px] text-white text-sm sm:text-base md:text-[20px] font-roboto ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
         eros, pulvinar facilisis id nisi.
       </p>
       <Button
         to={1}
         link="/about"
-        className="border-[#FFC107] text-white p-1 text-[21px] w-[180px] h-[42px] text-center align-middle font-roboto-n700 font-bold justify-self-center self-center capitalize hover:scale-95 hover:shadow-lg my-2"
+        className="border-[#FFC107] border-[3px] text-white p-1 text-[23px] w-[214px] h-[51px] text-center align-middle font-roboto-n700 justify-self-center self-end capitalize hover:scale-95 hover:shadow-lg"
         title="Learn More"
       />
       <Scroll

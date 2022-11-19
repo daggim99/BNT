@@ -41,7 +41,7 @@ const Scroll = (props) => {
   const { className, handleScroll } = props
 
   return (
-    <div className={`justify-self-center self-end pb-20`}>
+    <div className={`justify-self-center self-end pb-9`}>
       {scrolls.map((scroll, index) => {
         return (
           <button

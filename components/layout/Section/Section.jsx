@@ -6,20 +6,20 @@ const Section = (props) => {
 
   return (
     <section
-      className={`${card} grid grid-cols-[1fr] grid-rows-[1fr_min-content_1fr] w-screen`}
+      className={`${card} grid grid-cols-[1fr] grid-rows-[min-content_min-content_min-content] w-screen`}
     >
       <h1
-        className={`row-start-1 row-end-2 sm:text-4xl tracking-tighter font-lato-n900 font-extrabold md:text-[45px] text-black ${cardTitle}`}
+        className={`row-start-1 row-end-2 sm:text-4xl font-lato-n900 font-bold md:text-[45px] md:w-[333px] md:h-[78px] lg:text-[55px] text-black ${cardTitle}`}
       >
         {title}
       </h1>
       <p
-        className={`text-center row-start-2 row-end-3 text-[#BCBCBC] font-roboto text-[15px] leading-[24.84px] py-5 lg:px-72 ${cardText}`}
+        className={`text-center row-start-2 row-end-3 font-roboto md:text-[15px] lg:text-[20px] leading-[34.84px] ${cardText}`}
       >
         {text}
       </p>
       <Button
-        className={`cursor-pointer row-start-3 py-2 row-end-4 text-lg text-[18px] font-roboto-n500 font-bold ${cardButton.className}`}
+        className={`cursor-pointer row-start-3 row-end-4 text-[20px] md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
         title={cardButton.title}
         link={link}
         to={to}
