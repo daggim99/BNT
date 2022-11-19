@@ -70,7 +70,7 @@ const ProductItem = () =>
           } transition-d filter brightness-100 peer-hover:brightness-200 row-start-2 row-span-1 self-start  text-white -mt-12`}
         >
           <h2
-            className={`${
+            className={`font-bold ${
               left ? 'text-center md:text-right' : 'text-center md:text-left'
             } transition-d filter brightness-100 peer-hover:brightness-200 text-white font-lato-n900  lg:text-[65px]`}
           >
