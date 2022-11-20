@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../BGNS"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#202860",
+			"titleBar.activeBackground": "#2D3886",
+			"titleBar.activeForeground": "#FBFCFE"
+		}
+	}
+}

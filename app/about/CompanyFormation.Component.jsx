@@ -1,25 +1,29 @@
 const CompanyFormation = () => {
   return (
-    <section>
-      <div className={`my-6`}>
+    <section className={`h-[75vh] grid grid-cols-1 grid-rows-3`}>
+      <div className={`justify-self-center self-end lg:w-[912px] lg:h-[80px]`}>
         <h2
-          className={`justify-self-center self-end text-center font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[47px] leading-[80.4px] text-[#525252]`}
+          className={`justify-self-center self-end text-center font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[67px] leading-[80.4px] text-[#525252]`}
         >
           Company Formation
         </h2>
       </div>
-      <div>
+      <div
+        className={`row-start-2 row-span-1 justify-self-center self-end text-center lg:w-[940px]`}
+      >
         <p
-          className={`text-[#BCBCBC] px-9 md:px-32 lg:px-52 font-roboto text-center leading-[34.84px] py-3`}
+          className={`text-[#BCBCBC] font-roboto text-center lg:leading-[34.84px] lg:text-[20px]`}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
           bibendum metus. Donec scelerisque sollicitudin enim eu venenatis.
         </p>
       </div>
-      <div>
+      <div
+        className={`row-start-3 row-span-1 justify-self-center self-end text-center lg:w-[718px]`}
+      >
         <p
-          className={`text-[#BCBCBC] px-12 md:px-45 lg:px-72 font-roboto text-center leading-[34.84px py-3`}
+          className={`text-[#BCBCBC] font-roboto text-center lg:leading-[34.84px] lg:text-[20px]`}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
