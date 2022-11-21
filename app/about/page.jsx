@@ -2,6 +2,8 @@ import AboutHero from './Hero.Component'
 import CompanyFormation from './CompanyFormation.Component'
 import Section from './Section.Component'
 import CoreValues from './CoreValue.Component'
+import Team from './Team.Component'
+import TrustedPartners from './TrustedPartners.Component'
 import UnderConstruction from './Player.component'
 
 function About() {
@@ -12,7 +14,8 @@ function About() {
       <Section left={true} title="Our Mission" />
       <Section left={false} title="Our Vision" />
       <CoreValues />
-      <UnderConstruction />
+      <Team />
+      <TrustedPartners />
     </>
   )
 }

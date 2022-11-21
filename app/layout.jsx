@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import store from '../store/store'
 
 import Navbar from '../components/layout/Navbar/Navbar'
+import Others from '../components/layout/Section/Others/Others'
 import Footer from '../components/layout/Footer/Footer'
 import Badge from '../components/UI/Button/Badge'
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <Badge />
           {children}
+          <Others />
           <Footer />
         </Provider>
       </body>

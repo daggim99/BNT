@@ -24,7 +24,7 @@ const Section = (props) => {
           left ? '1' : '2'
         } col-span-1 row-span-full grid grid-cols-[1fr] grid-rows-3 `}
       >
-        <div className={`w-[375px]`}>
+        <div className={`w-[575px]`}>
           <h1 className="font-lato-n900 text-[#525252] text-[67px] leading-[80.4px] font-bold">
             {title}
           </h1>
