@@ -11,8 +11,7 @@ const OurProducts = () => (
       cardText:
         'justify-self-center self-center md:w-[940px] text-[#BCBCBC] md:mb-16',
       cardButton: {
-        className:
-          'justify-self-center self-center text-black border-[#FFC107] border-[3px]',
+        className: 'text-black border-[#FFC107] border-[3px]',
         title: 'Learn More',
       },
     }}

@@ -11,8 +11,7 @@ const About = () => (
       cardText:
         'justify-self-center self-center text-[#BCBCBC] md:w-[940px] md:mb-16',
       cardButton: {
-        className:
-          'justify-self-center self-center text-[#4A171E] border-[#4A171E] px-4 text-center  border-[3px] align-middle pt-3',
+        className: 'text-[#4A171E] border-[#4A171E] border-[3px] px-9 py-3',
         title: 'Learn More',
       },
       link: '/about',
