@@ -5,7 +5,7 @@ import LogoImage from '/public/images/Logo/BNTLogo.svg'
 const Logo = ({ className }) => {
   return (
     <figure
-      className={`ml-3 mt-1 md:ml-12 px-3 transition-all duration-500 ease-in col-start-1 col-end-2 relative w-full h-full hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105`}
+      className={`ml-3 mt-1 md:ml-16 px-3 transition-all self-end duration-500 ease-in col-start-1 col-end-2 relative w-[60%] h-[60%] hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105`}
     >
       <Image
         src={LogoImage}

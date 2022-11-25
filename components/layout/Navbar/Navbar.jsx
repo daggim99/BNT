@@ -18,7 +18,11 @@ export default function Navbar(index) {
   const dispatch = useDispatch()
 
   const handleNavigation = (to) => {
-    dispatch(navigationActions.navigate(to))
+    localStorage.setItem('to', JSON.stringify(to))
+    saved = localStorage.getItem('to')
+    console.log(saved)
+    savedInt = parseInt(saved)
+    dispatch(navigationActions.navigate(savedInt))
   }
 
   return (
