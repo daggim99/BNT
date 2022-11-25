@@ -87,7 +87,7 @@ export const Others = () => {
   return (
     <ul
       ref={ref}
-      className="h-[36vh] md:h-[24vh] lg:h-[16vh] overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-0"
+      className="dark:bg-white h-[36vh] md:h-[24vh] lg:h-[16vh] overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-0"
     >
       {businesses.map((business) => {
         const { id, title, colStart, colEnd } = business

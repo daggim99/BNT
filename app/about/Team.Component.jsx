@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 import TeamCarousel from './TeamCarousel.Component'
 
 const Team = () => {
@@ -11,17 +15,37 @@ const Team = () => {
         <div
           className={`justify-self-start self-center text-[67px] text-[#525252]`}
         >
-          <h2 className={`font-lato-n900 font-bold`}>Our Team</h2>
+          <motion.h2
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.3,
+              type: 'spring',
+              bounce: 0.4,
+            }}
+            className={`font-lato-n900 font-bold`}
+          >
+            Our Team
+          </motion.h2>
         </div>
         <div className={`justify-self-start self-center w-[506px]`}>
-          <p
+          <motion.p
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.6,
+              type: 'spring',
+              bounce: 0.4,
+            }}
             className={`text-[20px] text-[#6D6D6D] leading-[34.84px] font-roboto`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
             Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu
             venenatis.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div

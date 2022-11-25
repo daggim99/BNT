@@ -12,7 +12,10 @@ import './globals.css'
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`scroll-smooth`}>
+    <html
+      lang="en"
+      className={`scroll-smooth bg-white dark:bg-white scrollbar-thin scrollbar-track-{#FFC107} scrollbar-thumb-{#4A171E} hover:scrollbar-track-{#4A171E} hover:scrollbar-thumb-{#FFC107}`}
+    >
       {/*
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head

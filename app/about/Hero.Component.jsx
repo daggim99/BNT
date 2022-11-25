@@ -1,4 +1,6 @@
-import { bottom } from '@popperjs/core'
+'use client'
+
+import { motion } from 'framer-motion'
 
 const AboutHero = () => {
   const style = {
@@ -11,7 +13,7 @@ const AboutHero = () => {
   }
 
   return (
-    <section className="h-[75vh] grid grid-cols-[1fr_1fr] grid-rows-1">
+    <section className="h-[95vh] grid grid-cols-[1fr_1fr] grid-rows-1">
       <div
         style={style}
         className="w-[100%] h-[100%] col-start-1 col-span-1 row-start-1 row-end-2"
@@ -21,13 +23,33 @@ const AboutHero = () => {
         className="w-[100%] h-[100%] col-start-2 col-span-1 row-start-1 row-end-2"
       />
       <div className="lg:mt-12 col-span-full justify-self-center self-center row-start-1 row-end-2 grid grid-cols-1 grid-rows-2 lg:gap-y-6">
-        <h1 className="justify-self-center lg:w-[600px] align-middle leading-[110.4px] font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[92px] text-[#525252] text-center">
+        <motion.h1
+          initial={{ opacity: 0, scale: 1.6 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.3,
+            type: 'spring',
+            bounce: 0.4,
+          }}
+          className="justify-self-center lg:w-[600px] align-middle leading-[110.4px] font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[92px] text-[#525252] text-center"
+        >
           About Us
-        </h1>
-        <p className="justify-self-center lg:w-[676px] md:leading-[34.84px] text-base md:text-lg lg:text-[20px] font-roboto text-center text-[#808080]">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, scale: 1.6 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.6,
+            type: 'spring',
+            bounce: 0.4,
+          }}
+          className="justify-self-center lg:w-[676px] md:leading-[34.84px] text-base md:text-lg lg:text-[20px] font-roboto text-center text-[#808080]"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis justo mollis, auctor consequat urna.{' '}
-        </p>
+        </motion.p>
       </div>
     </section>
   )

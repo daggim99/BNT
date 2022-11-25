@@ -103,6 +103,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwind-scrollbar'),
     require('daisyui'),
     require('@headlessui/tailwindcss'),
     require('tw-elements/dist/plugin'),
