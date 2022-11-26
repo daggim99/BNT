@@ -1,11 +1,18 @@
+'use client'
+
+import BlogHero from './Hero.Component'
+import Content from './Content.Component'
+import Blog from './Blog.Components'
 import UnderConstruction from './Player.component'
 
-function Blog() {
+function BlogPage() {
   return (
     <>
-      <UnderConstruction />
+      <BlogHero />
+      <Content />
+      <Blog />
     </>
   )
 }
 
-export default Blog
+export default BlogPage

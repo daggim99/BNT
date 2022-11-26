@@ -78,7 +78,7 @@ export default function Navbar(index) {
                         className={classNames(
                           item.current
                             ? 'bg-gray-900 text-white font-montserrat-n600 text-xl'
-                            : 'text-gray-300 font-montserrat-n500 text-xl hover:bg-gray-700 hover:text-white',
+                            : 'text-white font-bold font-montserrat-n800 text-xl hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium',
                         )}
                         aria-current={item.current ? 'page' : undefined}
