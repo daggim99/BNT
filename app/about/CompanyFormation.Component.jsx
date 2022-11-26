@@ -4,7 +4,9 @@ import { motion } from 'framer-motion'
 
 const CompanyFormation = () => {
   return (
-    <section className={`h-[75vh] grid grid-cols-1 grid-rows-3`}>
+    <section
+      className={`pt-16 md:mt-0 h-[65vh] md:h-[75vh] grid grid-cols-1 grid-rows-[min-content_min-content_min-content] md:grid-rows-3 gap-y-9 md:gap-y-0`}
+    >
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
