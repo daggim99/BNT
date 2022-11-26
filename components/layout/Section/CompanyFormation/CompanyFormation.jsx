@@ -8,7 +8,7 @@ const CompanyFormation = () => (
     aliqua.    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
  ."
     className={{
-      card: 'h-screen sm:h-[65vh] bg-[#FFC10747] row-start-6 lg:row-start-5 text-black font-lato',
+      card: 'h-[50vh] pt-9 md:pt-0 sm:h-[65vh] bg-[#FFC10747] row-start-6 lg:row-start-5 text-black font-lato',
       cardTitle:
         'justify-self-center self-end font-lato-n900 text-4xl md:text-6xl lg:text-[67] leading-[80.4px] text-[#525252]',
       cardText:
