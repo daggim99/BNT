@@ -40,7 +40,7 @@ const Header = () => {
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`row-start-2 row-span-1 self-start justify-self-center text-center lg:w-[560px] pb-9`}
       >
-        <p className="leading-[20px] md:leading-[23.44px] text-white text-sm sm:text-base md:text-[20px] font-roboto ">
+        <p className="leading-[23.44px] text-white text-[16px] md:text-[20px] font-roboto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis id nisi.
         </p>
@@ -54,7 +54,7 @@ const Header = () => {
         <Button
           to={1}
           link="/about"
-          className="border-[#FFC107] px-6 md:px-9 md:py-2 py-1 border-[3px] text-white p-1 text-[18px] md:text-[23px] w-[214px] text-center align-middle font-roboto-n700 capitalize hover:scale-95 hover:shadow-lg"
+          className="border-[#FFC107] px-9 py-2  border-[3px] text-white p-1 text-[20px] md:text-[23px] w-[214px] text-center align-middle font-roboto-n700 capitalize hover:scale-95 hover:shadow-lg"
           title="Learn More"
         />
       </motion.div>
@@ -66,7 +66,7 @@ const Header = () => {
       >
         <Scroll
           handleScroll={handleScroll}
-          className="hover:cursor-pointer sm:p-2 sm:m-1"
+          className="hover:cursor-pointer p-3 m-1 "
         />
       </motion.div>
     </header>

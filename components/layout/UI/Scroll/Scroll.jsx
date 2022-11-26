@@ -49,7 +49,7 @@ const Scroll = (props) => {
             onClick={(event) => {
               handleScroll(scroll.scroll), handleSlide(index)
             }}
-            className={`rounded-full border-none p-1 m-1 cursor-pointer ${
+            className={`rounded-full border-none cursor-pointer ${
               scroll.active
                 ? `bg-[#FFFFFF66] hover:scale-105 hover:bg-opacity-10`
                 : `bg-[#FFFFFF24] hover:scale-105 hover:bg-opacity-10`

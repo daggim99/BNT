@@ -95,7 +95,7 @@ export const Others = () => {
           <motion.li
             animate={animation}
             key={id}
-            className={`transition-d lg:col-start-${colStart} lg:col-end-${colEnd} text-center align-middle justify-self-center p-1 self-center font-roboto-n500 text-[14px] md:text-[16px] text-[#636363] font-bold px-0  hover:scale-95 hover:text-base hover:bg-slate-50`}
+            className={`transition-d lg:col-start-${colStart} lg:col-end-${colEnd} text-center align-middle justify-self-center p-1 self-center font-roboto-n500 text-[16px] text-[#636363] font-bold px-0  hover:scale-95 hover:text-base hover:bg-slate-50`}
           >
             {title}
           </motion.li>
