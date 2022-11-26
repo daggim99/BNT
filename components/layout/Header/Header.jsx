@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header
       style={backgroundImage}
-      className={`h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
+      className={`h-screen md:h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
@@ -40,7 +40,7 @@ const Header = () => {
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`row-start-2 row-span-1 self-start justify-self-center text-center lg:w-[560px] pb-9`}
       >
-        <p className="leading-[23.44px] text-white text-sm sm:text-base md:text-[20px] font-roboto ">
+        <p className="leading-[20px] md:leading-[23.44px] text-white text-sm sm:text-base md:text-[20px] font-roboto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis id nisi.
         </p>
@@ -54,7 +54,7 @@ const Header = () => {
         <Button
           to={1}
           link="/about"
-          className="border-[#FFC107] px-9 py-2 border-[3px] text-white p-1 text-[23px] w-[214px] text-center align-middle font-roboto-n700 capitalize hover:scale-95 hover:shadow-lg"
+          className="border-[#FFC107] px-6 md:px-9 md:py-2 py-1 border-[3px] text-white p-1 text-[18px] md:text-[23px] w-[214px] text-center align-middle font-roboto-n700 capitalize hover:scale-95 hover:shadow-lg"
           title="Learn More"
         />
       </motion.div>

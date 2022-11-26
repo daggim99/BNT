@@ -14,7 +14,7 @@ const CoreValues = () => {
           initial={{ opacity: 0, scale: 0.6 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0, type: 'spring', bounce: 0.4 }}
-          className={`py-9 text-[50px] md:text-[67px] font-lato-i900 font-bold text-[#525252] text-center capitalize`}
+          className={`py-9 text-[30px] md:text-[67px] font-lato-i900 font-bold text-[#525252] text-center capitalize`}
         >
           Core value
         </motion.h2>
@@ -34,7 +34,7 @@ const CoreValues = () => {
               type: 'spring',
               bounce: 0.4,
             }}
-            className={`font-roboto text-[20px] text-[#6D6D6D] leading-[34.84px] text-center`}
+            className={`font-roboto text-[16px] md:text-[20px] text-[#6D6D6D] leading-[34.84px] text-center`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
@@ -54,7 +54,7 @@ const CoreValues = () => {
               type: 'spring',
               bounce: 0.4,
             }}
-            className={`font-roboto text-[20px] text-[#6D6D6D] leading-[34.84px] text-center`}
+            className={`font-roboto text-[16px] md:text-[20px] text-[#6D6D6D] leading-[34.84px] text-center`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
@@ -74,7 +74,7 @@ const CoreValues = () => {
               type: 'spring',
               bounce: 0.4,
             }}
-            className={`font-roboto text-[20px] text-[#6D6D6D] leading-[34.84px] text-center`}
+            className={`font-roboto text-[16px] md:text-[20px] text-[#6D6D6D] leading-[34.84px] text-center`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.

@@ -48,13 +48,13 @@ const Team = () => {
 
   return (
     <section
-      className={`bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[120vh] md:h-[95vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
+      className={`bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[95vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[min-content_min-content] md:grid-rows-[1fr] gap-y-12`}
     >
       <div
         className={` justify-self-center col-start-1 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content] gap-y-16`}
       >
         <div
-          className={`justify-self-center md:justify-self-start self-center text-[50px] md:text-[67px] text-[#525252]`}
+          className={`justify-self-center md:justify-self-start self-center text-[30px] md:text-[67px] text-[#525252]`}
         >
           <motion.h2
             initial={{ opacity: 0, scale: 0.6 }}
@@ -70,7 +70,7 @@ const Team = () => {
             Our Team
           </motion.h2>
         </div>
-        <div className={`justify-self-start self-center w-[506px]`}>
+        <div className={`justify-self-start self-center md:w-[506px]`}>
           <motion.p
             initial={{ opacity: 0, scale: 0.6 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -80,7 +80,7 @@ const Team = () => {
               type: 'spring',
               bounce: 0.4,
             }}
-            className={`text-center md:text-left text-[20px] text-[#6D6D6D] leading-[34.84px] font-roboto`}
+            className={`text-center px-12 md:px-0 md:text-left text-[16px] md:text-[20px] text-[#6D6D6D] leading-[20px] md:leading-[34.84px] font-roboto`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.

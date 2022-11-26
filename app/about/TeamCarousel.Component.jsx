@@ -25,7 +25,7 @@ const TeamCarousel = (props) => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className={`row-start-1 row-end-2 text-[#000000] text-[40px] leading-[40px] font-lato-n700`}
+          className={`row-start-1 row-end-2 text-[#000000] text-[30px] md:text-[40px] leading-[40px] font-lato-n700`}
         >
           {firstName}
         </motion.h1>
@@ -38,7 +38,7 @@ const TeamCarousel = (props) => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className={`row-start-2 row-span-1 font-roboto-n300 text-[#757575] text-[30px]`}
+          className={`row-start-2 row-span-1 font-roboto-n300 text-[#757575] text-[18px] md:text-[30px]`}
         >
           {jobPosition}
         </motion.p>

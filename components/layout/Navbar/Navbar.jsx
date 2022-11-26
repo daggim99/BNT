@@ -48,8 +48,8 @@ export default function Navbar(index) {
                 <figure className="transition-d justify-self-center md:justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-14 lg:ml-20">
                   <Link href="/" className="block lg:hidden">
                     <Image
-                      width="100"
-                      height="100"
+                      width="70"
+                      height="70"
                       className="p-0"
                       src="/images/Logo/BNTLogo.svg"
                       alt="Your Company"
@@ -102,8 +102,8 @@ export default function Navbar(index) {
                       onClick={(e) => handleNavigation(inx)}
                       className={classNames(
                         item.current
-                          ? 'bg-gray-900 text-white'
-                          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          ? 'bg-gray-900 text-white ml-3'
+                          : 'text-gray-300 hover:bg-gray-700 hover:text-white ml-3',
                         'block px-3 py-2 rounded-md text-base font-medium',
                       )}
                       aria-current={item.current ? 'page' : undefined}

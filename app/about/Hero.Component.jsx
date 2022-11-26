@@ -13,7 +13,7 @@ const AboutHero = () => {
   }
 
   return (
-    <section className="h-[70vh] grid grid-cols-[1fr_1fr] grid-rows-1">
+    <section className="h-[65vh] grid grid-cols-[1fr_1fr] grid-rows-1">
       <div
         style={style}
         className="w-[100%] h-[100%] col-start-1 col-span-1 row-start-1 row-end-2"
