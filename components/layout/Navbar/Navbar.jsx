@@ -44,8 +44,8 @@ export default function Navbar(index) {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 justify-self-start justify-start sm:justify-between w-screen m-0">
-                <figure className="transition-d justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-14 lg:ml-20">
+              <div className="grid grid-cols-1 sm:grid-cols-2 justify-self-center md:justify-self-start justify-center md:justify-start sm:justify-between w-screen m-0">
+                <figure className="transition-d justify-self-center md:justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-14 lg:ml-20">
                   <Link href="/" className="block lg:hidden">
                     <Image
                       width="100"
@@ -58,7 +58,7 @@ export default function Navbar(index) {
                   <Link
                     href="/"
                     onClick={(e) => handleActiveLink(0)}
-                    className="hidden lg:block"
+                    className="hidden lg:block justify-self-center"
                   >
                     <Image
                       width="100"

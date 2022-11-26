@@ -16,7 +16,7 @@ const Section = (props) => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`row-start-1 row-end-2 sm:text-4xl font-lato-n900 font-bold md:text-[45px] md:w-[333px] md:h-[78px] lg:text-[55px] text-black ${cardTitle}`}
+        className={`row-start-1 row-end-2 px-20 py-9 md:px-0 md:py-0 text-4xl font-lato-n900 font-bold md:text-[45px] md:w-[333px] md:h-[78px] lg:text-[55px] text-black ${cardTitle}`}
       >
         {title}
       </motion.h1>
@@ -24,7 +24,7 @@ const Section = (props) => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`text-center row-start-2 row-end-3 font-roboto md:text-[15px] lg:text-[20px] leading-[34.84px] ${cardText}`}
+        className={`px-14 py-3 md:px-0 md:py-0 text-center row-start-2 row-end-3 font-roboto md:text-[15px] lg:text-[20px] leading-[34.84px] ${cardText}`}
       >
         {text}
       </motion.p>
@@ -35,7 +35,7 @@ const Section = (props) => {
         className="row-start-3 row-end-4 justify-self-center"
       >
         <Button
-          className={`border-[3px] capitalize cursor-pointer text-[23px] md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
+          className={`border-[3px] px-6 py-1 mt-6 md:mt-0 md:px-0 md:py-0 capitalize cursor-pointer text-[23px] md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
           title={cardButton.title}
           link={link}
           to={to}

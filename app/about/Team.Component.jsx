@@ -48,13 +48,13 @@ const Team = () => {
 
   return (
     <section
-      className={`bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[95vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[1fr_min-content]`}
+      className={`bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[120vh] md:h-[95vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
     >
       <div
         className={` justify-self-center col-start-1 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content] gap-y-16`}
       >
         <div
-          className={`justify-self-start self-center text-[67px] text-[#525252]`}
+          className={`justify-self-center md:justify-self-start self-center text-[50px] md:text-[67px] text-[#525252]`}
         >
           <motion.h2
             initial={{ opacity: 0, scale: 0.6 }}
@@ -80,7 +80,7 @@ const Team = () => {
               type: 'spring',
               bounce: 0.4,
             }}
-            className={`text-[20px] text-[#6D6D6D] leading-[34.84px] font-roboto`}
+            className={`text-center md:text-left text-[20px] text-[#6D6D6D] leading-[34.84px] font-roboto`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
@@ -90,7 +90,7 @@ const Team = () => {
         </div>
       </div>
       <div
-        className={`col-start-2 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content_min-content] gap-y-16`}
+        className={`justify-self-center col-start-1 md:col-start-2 col-span-1 row-start-2 row-end-3 md:row-start-1 md:row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content_min-content] gap-y-16`}
       >
         <TeamCarousel
           firstName={team[count].firstName}

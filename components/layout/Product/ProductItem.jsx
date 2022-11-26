@@ -80,12 +80,14 @@ const ProductItem = () => {
       <article
         ref={ref}
         key={product.id}
-        className={`${base}  h-[75vh] md:h-full md:w-full `}
+        className={`${base} h-[75vh] md:h-full md:w-full `}
       >
         <motion.div
           animate={animation}
-          className={`group transition-d h-[75vh] md:h-full md:w-full grid ${
-            left ? 'grid-cols-[1.3fr_0.7fr]' : 'grid-cols-[0.7fr_1.3fr]'
+          className={`group transition-d h-full w-full grid ${
+            left
+              ? 'grid-cols-1 md:grid-cols-[1.3fr_0.7fr]'
+              : 'grid-cols-1 md:grid-cols-[0.7fr_1.3fr]'
           } grid-rows-[min-content_min-content_min-content_1fr]`}
         >
           <figure
@@ -106,14 +108,16 @@ const ProductItem = () => {
           <div
             className={`z-10 ${
               left
-                ? 'col-start-1 col-end-2 justify-self-end'
-                : 'col-start-2 col-end-3 justify-self-start'
+                ? 'col-start-1 col-end-2 justify-self-center md:justify-self-end'
+                : 'col-start-2 col-end-3 justify-self-center md:justify-self-start'
             } transition-d filter brightness-100 peer-hover:brightness-200 row-start-2 row-span-1 self-start  text-white -mt-12`}
           >
             <h2
               className={`font-bold ${
-                left ? 'text-center md:text-right' : 'text-center md:text-left'
-              } transition-d filter brightness-100 peer-hover:brightness-200 text-white font-lato-n900  lg:text-[65px]`}
+                left
+                  ? 'mt-14 md:mt-0 text-center md:text-right'
+                  : 'mt-14 md:mt-0 text-center md:text-left'
+              } transition-d filter brightness-100 peer-hover:brightness-200 text-white font-lato-n900 text-[30px] md:text-[45px]  lg:text-[65px]`}
             >
               {product.title}
             </h2>
@@ -128,7 +132,7 @@ const ProductItem = () => {
             <p
               className={`transition-d filter brightness-100 peer-hover:brightness-200 ${
                 left ? 'text-center md:text-right ' : 'text-center md:text-left'
-              } text-base md:text-[15px] lg:text-[20px] lg:leading-[34.84px]`}
+              } pt-14 md:pt-0 text-base md:text-[15px] lg:text-[20px] lg:leading-[34.84px]`}
             >
               {product.text}
             </p>
@@ -141,7 +145,7 @@ const ProductItem = () => {
             } filter brightness-100 peer-hover:brightness-200 z-10 col-start-1 col-end-2 row-start-4 row-span-1   text-white self-center mt-9 mb-12`}
           >
             <Button
-              className={`capitalize border-[3px] lg:w-[195px] lg:h-[57px] ${
+              className={`capitalize px-6 py-1 md:px-0 md:py-0 border-[3px] lg:w-[195px] lg:h-[57px] ${
                 left ? 'border-[#00D1FF]' : 'border-[#FFC107]'
               } bg-transparent  text-white text-base md:text-[16px] lg:text-[25px] text-center font-roboto-n500`}
               title="Learn More"

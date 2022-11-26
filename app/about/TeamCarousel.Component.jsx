@@ -11,7 +11,7 @@ const TeamCarousel = (props) => {
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, delay: 0.3, type: 'spring', bounce: 0.4 }}
-        className={`justify-self-center self-center col-start-1 col-end-2 row-span-full w-[188.88px] h-[188.88px] rounded-full border-none bg-[#D9D9D9]`}
+        className={`justify-self-center self-center col-start-1 col-end-2 row-span-full w-[99px] h-[99px] md:w-[188.88px] md:h-[188.88px] rounded-full border-none bg-[#D9D9D9]`}
       ></motion.div>
       <div
         className={`self-center col-start-2 col-end-3 row-span-full gird grid-cols-1 grid-rows-2`}
