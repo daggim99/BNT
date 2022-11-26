@@ -9,7 +9,7 @@ const Section = (props) => {
   const { left, title } = props
 
   return (
-    <section className="mt-16 h-[65vh] rounded-none w-[80vw] m-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr] gap-x-16">
+    <section className="mt-16 h-[60vh] rounded-none w-[80vw] m-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr] gap-x-16">
       <motion.div
         initial={{ opacity: 0, scale: 0, x: 14 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -21,7 +21,7 @@ const Section = (props) => {
         <Image
           width={100}
           height={100}
-          src={'/images/About/imageHigih.png'}
+          src={'/images/About/imageHigh.png'}
           alt={'image'}
           className="w-full object-contain h-full"
         />
@@ -29,7 +29,7 @@ const Section = (props) => {
       <div
         className={`md:col-start-${
           left ? '1' : '2'
-        } col-span-1 row-span-full grid grid-cols-[1fr] grid-rows-3 `}
+        } self-center col-span-1 row-span-full grid grid-cols-[1fr] grid-rows-[min-content_min-content_min-content] gap-y-3`}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0, x: 14 }}

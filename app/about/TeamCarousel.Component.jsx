@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion'
 
-const TeamCarousel = () => {
+const TeamCarousel = (props) => {
+  const { firstName, jobPosition } = props
+
   return (
     <section className={`grid grid-cols-2 grid-rows-2`}>
       <motion.div
@@ -25,7 +27,7 @@ const TeamCarousel = () => {
           }}
           className={`row-start-1 row-end-2 text-[#000000] text-[40px] leading-[40px] font-lato-n700`}
         >
-          First Name
+          {firstName}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, scale: 0.2 }}
@@ -38,7 +40,7 @@ const TeamCarousel = () => {
           }}
           className={`row-start-2 row-span-1 font-roboto-n300 text-[#757575] text-[30px]`}
         >
-          Job Position
+          {jobPosition}
         </motion.p>
       </div>
     </section>
