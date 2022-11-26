@@ -51,8 +51,8 @@ const Content = () => {
               href={content.href}
               className={`w-full md:w-[291px] pt-6 align-middle h-full uppercase col-start-${
                 content.col
-              } col-span-1 justify-self-center self-center font-roboto-n700 font-bold text-[20px] md:text-[40px] text-center text-white ${
-                content.active ? 'bg-[#D9D9D9] text-black' : ''
+              } col-span-1 justify-self-center self-center font-roboto-n700 font-bold text-[20px] md:text-[40px] text-center ${
+                content.active ? 'bg-[#D9D9D9] text-black' : 'text-white'
               }`}
             >
               {content.name}
