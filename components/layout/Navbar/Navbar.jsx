@@ -19,9 +19,8 @@ export default function Navbar(index) {
 
   const handleNavigation = (to) => {
     localStorage.setItem('to', JSON.stringify(to))
-    saved = localStorage.getItem('to')
-    console.log(saved)
-    savedInt = parseInt(saved)
+    const saved = localStorage.getItem('to')
+    const savedInt = parseInt(saved)
     dispatch(navigationActions.navigate(savedInt))
   }
 
@@ -32,7 +31,7 @@ export default function Navbar(index) {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -45,8 +44,8 @@ export default function Navbar(index) {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 justify-start sm:justify-between w-screen m-0">
-                <figure className="transition-d justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-12 lg:ml-20">
+              <div className="grid grid-cols-1 sm:grid-cols-2 justify-self-start justify-start sm:justify-between w-screen m-0">
+                <figure className="transition-d justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-14 lg:ml-20">
                   <Link href="/" className="block lg:hidden">
                     <Image
                       width="100"
@@ -69,7 +68,7 @@ export default function Navbar(index) {
                     />
                   </Link>
                 </figure>
-                <div className="hidden sm:ml-6 sm:block items-stretch justify-self-end self-center md:mr-12 lg:mr-20">
+                <div className="hidden sm:block items-stretch justify-self-end self-center md:mr-14 lg:mr-20 ">
                   <div className="flex space-x-4">
                     {navigation.map((item, inx) => (
                       <Link

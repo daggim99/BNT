@@ -22,7 +22,7 @@ const FooterNav = () => {
       className={`text-white h-[12vh] transition-d bg-[#4A171E] transition-d hover:bg-gradient-to-t col-start-1 col-end-3 row-start-1 row-end-2 grid grid-cols-[minmax(60px,_0.15fr)_1fr] grid-rows-[12vh]`}
     >
       <Logo />
-      <div className="justify-self-end self-center col-start-2 col-end-3 row-start-1 row-end-2 grid grid-cols-4 gap-4 mr-28 ml-3  lg:ml-72">
+      <div className="justify-self-end self-center col-start-2 col-end-3 row-start-1 row-end-2 grid grid-cols-4 gap-4 mr-28 ml-3  lg:ml-72 md:mr-14 lg:mr-20">
         {navigation.map((l, index) => {
           const { name, current, href } = l
           return (

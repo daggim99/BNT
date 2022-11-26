@@ -21,7 +21,7 @@ const Section = (props) => {
         <Image
           width={100}
           height={100}
-          src={'/images/About/image.png'}
+          src={'/images/About/imageHigih.png'}
           alt={'image'}
           className="w-full object-contain h-full"
         />
