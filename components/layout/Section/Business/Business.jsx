@@ -5,7 +5,7 @@ const Business = () => (
     title="Business"
     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis."
     className={{
-      card: 'pt-20 md:pt-0 max-h-[100vh] min-h-[50vh] overflow-scroll md:overflow-clip sm:max-h-[85vh] sm:min-h-[55vh] bg-[#FFC10747] row-start-6 lg:row-start-5 text-black py-9',
+      card: 'pt-20 md:pt-0 max-h-[100vh] lg:h-[40vh] min-h-[50vh] overflow-scroll md:overflow-clip sm:max-h-[85vh] sm:min-h-[55vh] bg-[#FFC10747] row-start-6 lg:row-start-5 text-black py-9',
       cardTitle: 'justify-self-center self-end text-center md:mt-24',
       cardText:
         'justify-self-center self-center md:w-[842px] text-[#323232] dark:text-[#323232] md:mb-16',
