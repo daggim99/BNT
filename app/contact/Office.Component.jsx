@@ -1,10 +1,20 @@
 'use client'
 
+import { motion } from 'framer-motion'
+
 const Office = () => {
   return (
     <article className={`grid grid-cols-1 grid-rows-1`}>
       <div className={`grid grid-cols-3 grid-rows-1`}>
-        <div
+        <motion.div
+          initial={{ opacity: 0, scale: 1.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.8,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`col-start-1 col-span-1 grid grid-cols-2 grid-rows-1 gap-x-4`}
         >
           <div
@@ -49,8 +59,16 @@ const Office = () => {
               Office location
             </p>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.9,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`col-start-2 col-span-1 grid grid-cols-2 grid-rows-1 gap-x-4`}
         >
           <div
@@ -99,8 +117,16 @@ const Office = () => {
               Office location
             </p>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.4 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 1,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`col-start-3 col-span-1 grid grid-cols-2 grid-rows-1 gap-x-4`}
         >
           <div
@@ -145,7 +171,7 @@ const Office = () => {
               Office location
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </article>
   )
