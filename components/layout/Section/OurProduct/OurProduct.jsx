@@ -5,7 +5,7 @@ const OurProducts = () => (
     title="Our Brands"
     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis."
     className={{
-      card: 'lg:pt-12 max-h-[100vh] min-h-[50vh] overflow-scroll md:overflow-clip sm:max-h-[65vh] sm:min-h-[60vh] pt-9 md:pt-0 md:max-h-[50vh] md:min-h-[45vh] lg:max-h-[40vh] lg:min-h-[35vh] row-start-2 row-end-3 py-9 dark:bg-white',
+      card: 'h-[70vh] sm:h-[60vh] md:h-[55vh] lg:h-[55vh] 2xl:h-[50vh] overflow-scroll md:overflow-clip pt-9 md:pt-0 row-start-2 row-end-3 py-9 dark:bg-white',
       cardTitle:
         'justify-self-center align-bottom self-center text-center md:mt-24',
       cardText:
