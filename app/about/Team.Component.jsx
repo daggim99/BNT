@@ -55,7 +55,7 @@ const Team = () => {
         className={` justify-self-center col-start-1 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content] gap-y-16`}
       >
         <div
-          className={`justify-self-center md:justify-self-start self-center text-[30px] md:text-[67px] text-[#525252]`}
+          className={`lg:pt-12 xl:pt-16 2xl:pt-24 justify-self-center md:justify-self-start self-center text-[30px] md:text-[67px] text-[#525252]`}
         >
           <motion.h2
             initial={{ opacity: 0, scale: 0.6 }}
