@@ -58,7 +58,7 @@ const Section = (props) => {
           className={`w-[608px]`}
         >
           <p
-            className={`text-[#6D6D6D] px-6 md:py-6 lg:py-9 xl:py-12 2xl:py:16 md:px-0 text-base md:text-[20px] font-roboto leading-[34.84px]`}
+            className={`text-[#6D6D6D] px-6 md:py-6 lg:py-9 xl:py-16 2xl:py:24 md:px-0 text-base md:text-[20px] font-roboto leading-[34.84px]`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
