@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 import Button from '/components/UI/Button/Button'
+
 const Section = (props) => {
   const { left, title } = props
 
