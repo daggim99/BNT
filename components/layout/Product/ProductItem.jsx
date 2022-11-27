@@ -80,7 +80,7 @@ const ProductItem = () => {
       <article
         ref={ref}
         key={product.id}
-        className={`${base} md:h-full md:w-full max-h-[100vh] min-h-[50vh] overflow-scroll md:overflow-clip`}
+        className={`${base} md:h-full md:w-full max-h-[100vh] min-h-[50vh] overflow-scroll md:overflow-visible`}
       >
         <motion.div
           animate={animation}
