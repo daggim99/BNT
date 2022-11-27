@@ -1,7 +1,7 @@
 const Socials = () => {
   return (
     <div
-      className={`transition-d text-white col-span-full md:col-start-3 md:col-span-1 row-start-2 md:row-start-2  row-span-1 self-center justify-self-center md:justify-self-end self-center md:self-start grid grid-cols-4 gap-x-9 lg:gap-x-6 grid-rows-1 md:mr-14 lg:mr-20`}
+      className={`transition-d text-yellow col-span-full md:col-start-3 md:col-span-1 row-start-2 md:row-start-1  row-span-1 self-center justify-self-center md:justify-self-end self-center md:self-start grid grid-cols-4 gap-x-9 lg:gap-x-6 grid-rows-1 md:mr-14 lg:mr-20`}
     >
       <svg
         width="36"
