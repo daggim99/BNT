@@ -9,7 +9,7 @@ const Section = (props) => {
   const { left, title } = props
 
   return (
-    <section className="md:mt-16 h-[60vh] md:h-[60vh] rounded-none w-full overflow-scroll md:overflow-visible m-0 md:w-[80vw] md:m-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-1 gap-y-24 md:gap-y-0 gap-x-16">
+    <section className="md:mt-3 overflow-scroll lg:overflow-clip h-[60vh] md:h-[60vh] rounded-none w-full overflow-scroll md:overflow-visible m-0 md:w-[80vw] md:m-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-1 gap-y-24 md:gap-y-0 gap-x-12">
       <motion.div
         initial={{ opacity: 0, scale: 0, x: 14 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -58,7 +58,7 @@ const Section = (props) => {
           className={`w-[608px]`}
         >
           <p
-            className={`text-[#6D6D6D] px-6 md:px-0 text-base md:text-[20px] font-roboto leading-[34.84px]`}
+            className={`text-[#6D6D6D] px-6 md:py-6 lg:py-8 xl:py-9 2xl:py:10 md:px-0 text-base md:text-[20px] font-roboto leading-[34.84px]`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.

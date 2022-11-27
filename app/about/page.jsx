@@ -4,7 +4,6 @@ import Section from './Section.Component'
 import CoreValues from './CoreValue.Component'
 import Team from './Team.Component'
 import TrustedPartners from './TrustedPartners.Component'
-import UnderConstruction from './Player.component'
 
 function About() {
   return (

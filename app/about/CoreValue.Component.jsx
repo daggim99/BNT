@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const CoreValues = () => {
   return (
     <section
-      className={`mt-12 w-[85vw] m-auto grid grid-cols-1 grid-rows-[min-content_1fr]`}
+      className={`mt-9 w-[85vw] overflow-scroll md:overflow-clip m-auto grid grid-cols-1 grid-rows-[min-content_1fr]`}
     >
       <div
         className={`row-start-1 row-span-1 md:self-center md:justify-self-center md:w-[500px]`}

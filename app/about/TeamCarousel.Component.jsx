@@ -6,7 +6,7 @@ const TeamCarousel = (props) => {
   const { firstName, jobPosition } = props
 
   return (
-    <section className={`grid grid-cols-2 grid-rows-2`}>
+    <section className={`grid grid-cols-2 grid-rows-2 mb-6`}>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}

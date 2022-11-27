@@ -46,8 +46,8 @@ const ProductItem = () => {
 
     if (!inView) {
       animation.start({
-        scale: 0.3,
-        opacity: 0.3,
+        scale: 0.99,
+        opacity: 0.8,
         transition: {
           delay: 0.1,
           duration: 0.4,
@@ -80,7 +80,7 @@ const ProductItem = () => {
       <article
         ref={ref}
         key={product.id}
-        className={`${base} h-[75vh] md:h-full md:w-full `}
+        className={`${base} md:h-full md:w-full max-h-[100vh] min-h-[50vh] overflow-scroll md:overflow-clip`}
       >
         <motion.div
           animate={animation}

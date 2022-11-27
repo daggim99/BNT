@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 import TeamCarousel from './TeamCarousel.Component'
+import TrustedPartners from './TrustedPartners.Component'
 
 const team = [
   {
@@ -48,7 +49,7 @@ const Team = () => {
 
   return (
     <section
-      className={`bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[95vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[min-content_min-content] md:grid-rows-[1fr] gap-y-12`}
+      className={`overflow-scroll md:overflow-clip bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[90vh] sm:h-[85vh] md:h-[80vh] lg:h-[75vh] xl:[70vh] 2xl:h-[65vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[min-content_min-content_min-content] md:grid-rows-[1fr_min-content] gap-y-12 md:gap-y-0`}
     >
       <div
         className={` justify-self-center col-start-1 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content] gap-y-16`}
@@ -90,7 +91,7 @@ const Team = () => {
         </div>
       </div>
       <div
-        className={`justify-self-center col-start-1 md:col-start-2 col-span-1 row-start-2 row-end-3 md:row-start-1 md:row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content_min-content] gap-y-16`}
+        className={`justify-self-center col-start-1 md:col-start-2 col-span-1 row-start-2 row-end-3 md:row-start-1 md:row-end-2 grid grid-cols-1 grid-rows-[1fr_1fr_0.2fr]`}
       >
         <TeamCarousel
           firstName={team[count].firstName}

@@ -69,7 +69,7 @@ export default function Navbar(index) {
                   </Link>
                 </figure>
                 <div className="hidden sm:block items-stretch justify-self-end self-center md:mr-14 lg:mr-20 ">
-                  <div className="flex space-x-4">
+                  <div className="grid grid-cols-4 gap-x-5">
                     {navigation.map((item, inx) => (
                       <Link
                         href={item.href}
@@ -77,9 +77,9 @@ export default function Navbar(index) {
                         onClick={(e) => handleNavigation(inx)}
                         className={classNames(
                           item.current
-                            ? 'bg-gray-900 text-white font-montserrat-n600 text-xl'
-                            : 'text-white font-bold font-montserrat-n800 text-xl hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium',
+                            ? 'font-roboto text-amber-500 border-b-4 border-amber-400 text-center self-center'
+                            : 'text-black font-roboto-n500 font-bold w-full h-full self-center text-center justify-self-center self-center hover:cursor-pointer hover:scale-95 hover:border-b-4 hover:border-amber-400',
+                          ' px-3 py-2 rounded-md text-sm font-bold',
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
