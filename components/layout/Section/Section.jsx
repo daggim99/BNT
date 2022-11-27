@@ -10,13 +10,13 @@ const Section = (props) => {
 
   return (
     <section
-      className={`${card} grid grid-cols-[1fr] grid-rows-[min-content_min-content_min-content] w-screen`}
+      className={`${card} grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
     >
       <motion.h1
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`row-start-1 row-end-2 px-12 sm:px-9 py-6 sm:py-3 md:px-0 md:py-0 text-2xl sm:text-3xl font-lato-n900 font-bold md:text-[45px] md:w-[333px] md:h-[78px] lg:text-[55px] text-black ${cardTitle}`}
+        className={`self-end row-start-1 row-end-2 px-12 sm:px-9 text-2xl sm:text-3xl font-lato-n900 font-bold md:text-[45px] lg:text-[55px] text-black ${cardTitle}`}
       >
         {title}
       </motion.h1>
