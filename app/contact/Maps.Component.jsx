@@ -1,5 +1,7 @@
 'use client'
 
+import { motion } from 'framer-motion'
+
 import React from 'react'
 
 const locations = [
@@ -28,10 +30,20 @@ const locations = [
 
 function Maps() {
   return (
-    <article className={`grid grid-cols-1 grid-rows-3 gap-y-3`}>
+    <motion.article
+      initial={{ opacity: 0, scale: 0.8, x: -399 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      transition={{
+        duration: 0.9,
+        delay: 0.9,
+        type: 'spring',
+        bounce: 0.4,
+      }}
+      className={`grid grid-cols-1 grid-rows-3 gap-y-3`}
+    >
       {locations.map((location) => {
         return (
-          <>
+          <React.Fragment key={location.id}>
             <iframe
               key={location.id}
               loading="lazy"
@@ -54,10 +66,10 @@ function Maps() {
             ) : (
               ''
             )}
-          </>
+          </React.Fragment>
         )
       })}
-    </article>
+    </motion.article>
   )
 }
 

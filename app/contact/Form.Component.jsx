@@ -1,30 +1,66 @@
 'use client'
 
+import { motion } from 'framer-motion'
+
 function Form() {
   return (
     <article className={`grid grid-rows-[1fr_1fr]`}>
       <div
         className={`row-start-1 row-span-1 grid grid-cols-1 grid-rows-[min-content_min-content_min-content] gap-y-6`}
       >
-        <h1
-          className={`row-start-1 row-span-1 text-[#525252] text-[48px] font-lato-n900 leading-[57.6px]`}
+        <motion.h1
+          initial={{ opacity: 0, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.3,
+            type: 'spring',
+            bounce: 0.4,
+          }}
+          className={`row-start-1 row-span-1 text-[#525252] text-[48px] font-lato-n900 font-bold leading-[57.6px]`}
         >
           Head Office
-        </h1>
-        <h1
-          className={`row-start-2 row-span-1 text-[#525252] text-[48px] font-lato-n900 leading-[57.6px]`}
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.6,
+            type: 'spring',
+            bounce: 0.4,
+          }}
+          className={`row-start-2 row-span-1 text-[#525252] text-[48px] font-lato-n900 font-bold leading-[57.6px]`}
         >
           Drop Us A Line
-        </h1>
-        <p
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.9,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`pt-6 row-start-3 row-span-1 w-[539px] text-[24px] text-[#BCBCBC] text-left font-roboto`}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis justo mollis, auctor consequat urna.{' '}
-        </p>
+        </motion.p>
       </div>
       <div className={`row-start-2 row-span-1`}>
-        <div className="block">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.6,
+            type: 'spring',
+            bounce: 0.4,
+          }}
+          className="block"
+        >
           <form>
             <div className="form-group mb-6">
               <textarea
@@ -115,7 +151,7 @@ function Form() {
               submit
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </article>
   )
