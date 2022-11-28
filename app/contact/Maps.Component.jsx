@@ -38,7 +38,7 @@ function Maps() {
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
               src={location.location}
-              className={`col-start-1 col-span-1 row-start-${location.row} row-span-1 drop-shadow-sm w-full h-[330px]`}
+              className={`hover:z-50 col-start-1 col-span-1 row-start-${location.row} row-span-1 drop-shadow-sm w-full h-[330px]`}
             />
             {location.name ? (
               <div
