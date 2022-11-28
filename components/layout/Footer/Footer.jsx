@@ -16,7 +16,7 @@ const Footer = () => {
         </p>
         <Socials />
       </article>
-      <p className="text-white text-center pt-9 sm:pt-6 md:pt-3 lg:pt-2 xl:pt-1 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] xl:text-[21px]  font-roboto font-bold col-start-1 col-end-3 justify-self-center p-9 self-end">
+      <p className="text-white text-center pt-9 sm:pt-6 md:pt-3 lg:pt-2 xl:pt-1  text-[10px] sm:text-[14px] md:text-[18px] lg:text-[20px] xl:text-[21px]  font-roboto font-bold col-start-1 col-end-3 justify-self-center p-9 self-end">
         2022 BNT Industry and trading PLC
       </p>
     </footer>
