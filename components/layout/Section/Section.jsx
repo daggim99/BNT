@@ -35,7 +35,7 @@ const Section = (props) => {
         className="row-start-3 row-end-4 justify-self-center self-start pb-16 sm:pb:14 md:pb-0"
       >
         <Button
-          className={`border-[3px] px-6 py-1 mt-6 md:mt-0 md:px-0 md:py-0 capitalize cursor-pointer text-[18] md:text-[23px] leading-9 md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
+          className={`border-[3px] px-3 sm:px-4 py-0 sm:py-1 mt-6 md:mt-0 md:px-0 md:py-0 capitalize cursor-pointer text-[16px] sm:text-[18px] md:text-[23px] leading-9 md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
           title={cardButton.title}
           link={link}
           to={to}

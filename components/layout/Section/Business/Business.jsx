@@ -11,7 +11,7 @@ const Business = () => (
       cardText:
         'justify-self-center self-center md:w-[842px] text-[#323232] dark:text-[#323232]',
       cardButton: {
-        className: 'text-[#4A171E] border-[#4A171E] border-[3px] px-4 py-1',
+        className: 'text-[#4A171E] border-[#4A171E] border-[3px]',
         title: 'Learn More',
       },
     }}

@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header
       style={backgroundImage}
-      className={`h-[140vh] md:h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
+      className={`h-[122vh] sm:h-[120vh] overflow-scroll sm:overflow-hidden md:h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
@@ -66,7 +66,7 @@ const Header = () => {
       >
         <Scroll
           handleScroll={handleScroll}
-          className="hover:cursor-pointer p-3 m-1 "
+          className="hover:cursor-pointer p-1 sm:p-2 md:p-3 m-1 "
         />
       </motion.div>
     </header>

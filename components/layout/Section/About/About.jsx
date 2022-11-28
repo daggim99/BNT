@@ -5,7 +5,7 @@ const About = () => (
     title="About Us"
     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis."
     className={{
-      card: 'overflow-scroll md:overflow-clip row-start-2 row-end-3 py-6 sm:py-3 md:py-0 dark:bg-white',
+      card: 'md:t-24 overflow-scroll md:overflow-clip row-start-2 row-end-3 dark:bg-white',
       cardTitle:
         'justify-self-center align-bottom text-center md:mt-24 xl:mt-0 xl:mb-0',
       cardText:
