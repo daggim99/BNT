@@ -1,5 +1,6 @@
 import ContactHero from './Hero.Component'
 import GetInTouch from './GetInTouch.Component'
+import Location from './Location.Component'
 import UnderConstruction from './Player.component'
 
 function Contact() {
@@ -7,6 +8,7 @@ function Contact() {
     <>
       <ContactHero />
       <GetInTouch />
+      <Location />
       <UnderConstruction />
     </>
   )
