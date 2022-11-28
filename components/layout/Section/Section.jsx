@@ -10,7 +10,7 @@ const Section = (props) => {
 
   return (
     <section
-      className={`${card} max-h-[40vh] min-h-[333px] grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
+      className={`${card} max-h-[45vh] min-h-[333px] grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
     >
       <motion.h1
         initial={{ opacity: 0, scale: 1.6 }}
