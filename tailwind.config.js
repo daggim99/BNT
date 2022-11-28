@@ -103,6 +103,9 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-brand-colors'),
+    require('tailwindcss-debug-screens'),
     require('tailwind-scrollbar'),
     require('daisyui'),
     require('@headlessui/tailwindcss'),

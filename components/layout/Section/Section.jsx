@@ -10,7 +10,7 @@ const Section = (props) => {
 
   return (
     <section
-      className={`${card} grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
+      className={`${card} max-h-[30vh] min-h-[320px] grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
     >
       <motion.h1
         initial={{ opacity: 0, scale: 1.6 }}
@@ -24,7 +24,7 @@ const Section = (props) => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`px-16 py-3 sm:px-16 sm:py-2 md:px-0 md:py-0 text-center row-start-2 row-end-3 font-roboto text-[14px] sm:text-[15px] md:text-[18px] lg:text-[20px] leading-[18px] sm:leading-[21px] md:leading-[34.84px] ${cardText}`}
+        className={`px-16 sm:px-16 md:px-0 text-center row-start-2 row-end-3 font-roboto text-[14px] sm:text-[15px] md:text-[18px] lg:text-[20px] leading-[18px] sm:leading-[21px] md:leading-[34.84px] ${cardText}`}
       >
         {text}
       </motion.p>
@@ -32,7 +32,7 @@ const Section = (props) => {
         initial={{ opacity: 0, y: '12vh' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className="row-start-3 row-end-4 justify-self-center pb-16 sm:pb:14 md:pb-0"
+        className="row-start-3 row-end-4 justify-self-center self-start pb-16 sm:pb:14 md:pb-0"
       >
         <Button
           className={`border-[3px] px-6 py-1 mt-6 md:mt-0 md:px-0 md:py-0 capitalize cursor-pointer text-[18] md:text-[23px] leading-9 md:w-[195px] md:h-[57px] font-roboto-n500 ${cardButton.className}`}
