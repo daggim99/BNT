@@ -36,6 +36,7 @@ const Section = (props) => {
         <motion.div
           initial={{ opacity: 0, scale: 0, x: 14 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.3,
@@ -51,6 +52,7 @@ const Section = (props) => {
         <motion.div
           initial={{ opacity: 0, scale: 0, x: 14 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.5,
@@ -71,6 +73,7 @@ const Section = (props) => {
         <motion.div
           initial={{ opacity: 0, scale: 0, x: 14 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.7,
