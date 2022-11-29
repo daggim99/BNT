@@ -53,6 +53,7 @@ const Blog = () => {
       <motion.div
         initial={{ opacity: 0, scale: 1.6, x: -333 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.9,
           delay: 0.3,
@@ -88,6 +89,7 @@ const Blog = () => {
       <motion.div
         initial={{ opacity: 0, scale: 1.6, x: 333 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.9,
           delay: 0.6,
