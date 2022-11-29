@@ -36,6 +36,7 @@ const Content = () => {
       <motion.nav
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.9,
           delay: 0.3,
@@ -66,6 +67,7 @@ const Content = () => {
         <motion.p
           initial={{ opacity: 0, scale: 1.6 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.3,
@@ -80,6 +82,7 @@ const Content = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.3,

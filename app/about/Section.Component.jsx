@@ -14,6 +14,7 @@ const Section = (props) => {
       <motion.div
         initial={{ opacity: 0, scale: 0, x: 14 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.3, type: 'spring', bounce: 0.4 }}
         className={`self-stretch col-span-full md:col-span-1 row-span-full md:row-start-1 md:row-span-1 md:col-start-${
           left ? '2' : '1'

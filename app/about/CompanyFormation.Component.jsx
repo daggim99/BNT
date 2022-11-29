@@ -10,6 +10,7 @@ const CompanyFormation = () => {
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`justify-self-center self-center lg:w-[912px] lg:h-[80px] pb-9 `}
       >
@@ -22,6 +23,7 @@ const CompanyFormation = () => {
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`row-start-2 row-span-1 justify-self-center self-start text-center lg:w-[940px]`}
       >

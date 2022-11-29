@@ -13,6 +13,7 @@ const CoreValues = () => {
         <motion.h2
           initial={{ opacity: 0, scale: 0.6 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0, type: 'spring', bounce: 0.4 }}
           className={`py-9 text-[30px] md:text-[67px] font-lato-i900 font-bold text-[#525252] text-center capitalize`}
         >

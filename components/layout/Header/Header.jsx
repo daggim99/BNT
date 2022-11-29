@@ -27,6 +27,7 @@ const Header = () => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, type: 'spring', bounce: 0.4 }}
+        viewport={{ once: true }}
         className={`row-start-1 row-span-1 align-end row-end-2 self-end justify-self-center lg:w-[764px]`}
       >
         <h1 className="font-oswald-n700 text-white text-center font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[100px]">
@@ -38,6 +39,7 @@ const Header = () => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
+        viewport={{ once: true }}
         className={`row-start-2 row-span-1 self-start justify-self-center text-center lg:w-[560px] pb-9`}
       >
         <p className="leading-[24.3px] sm:leading-[23.44px] text-white text-[17.9px] sm:text-[18px] md:text-[20px] font-roboto ">
@@ -49,6 +51,7 @@ const Header = () => {
         initial={{ opacity: 0, y: '12vh' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6, type: 'spring', bounce: 0.4 }}
+        viewport={{ once: true }}
         className={`row-start-3 row-span-1 justify-self-center self-center `}
       >
         <Button
@@ -61,6 +64,7 @@ const Header = () => {
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`row-start-4 row-span-1 justify-self-center self-end mb-6 `}
       >

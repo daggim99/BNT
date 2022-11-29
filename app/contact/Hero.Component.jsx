@@ -33,6 +33,7 @@ const ContactHero = () => {
           <motion.h1
             initial={{ opacity: 0, scale: 1.6 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.3,
@@ -46,6 +47,7 @@ const ContactHero = () => {
           <motion.p
             initial={{ opacity: 0, scale: 1.6 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.6,
@@ -62,6 +64,7 @@ const ContactHero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0, x: 14 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.7,
@@ -79,6 +82,7 @@ const ContactHero = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.99, x: 333 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.7,

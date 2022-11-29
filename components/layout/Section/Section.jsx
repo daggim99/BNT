@@ -15,6 +15,7 @@ const Section = (props) => {
       <motion.h1
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`self-end row-start-1 row-end-2 px-12 sm:px-9 text-4xl sm:text-5xl font-lato-n900 font-bold md:text-[45px] lg:text-[55px] text-black ${cardTitle}`}
       >
@@ -23,6 +24,7 @@ const Section = (props) => {
       <motion.p
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`px-14 sm:px-16 md:px-0 text-center row-start-2 row-end-3 font-roboto text-[18.5px] sm:text-[19.4px] md:text-[19.7px] lg:text-[20px] leading-[31px] sm:leading-[32px] md:leading-[34.84px] ${cardText}`}
       >
@@ -31,6 +33,7 @@ const Section = (props) => {
       <motion.div
         initial={{ opacity: 0, y: '12vh' }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className="row-start-3 row-end-4 justify-self-center self-start pb-16 sm:pb:14 md:pb-0"
       >

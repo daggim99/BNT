@@ -10,6 +10,7 @@ const GetInTouch = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.9,
           delay: 0.4,
@@ -27,6 +28,7 @@ const GetInTouch = () => {
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.9,
           delay: 0.7,

@@ -56,6 +56,7 @@ function QnA() {
       <motion.div
         initial={{ opacity: 0, scale: 0.3 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.9,
           delay: 0.4,
@@ -85,6 +86,7 @@ function QnA() {
           <motion.p
             initial={{ opacity: 0, scale: 0.9, x: -666 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.5,
@@ -99,6 +101,7 @@ function QnA() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: -666 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.6,
@@ -122,6 +125,7 @@ function QnA() {
             <motion.p
               initial={{ opacity: 0, scale: 0.3 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{
                 duration: 0.9,
                 delay: 0.7,
@@ -138,6 +142,7 @@ function QnA() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.3 }}
                 whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 0.9,
                   delay: 0.7,
@@ -162,6 +167,7 @@ function QnA() {
               <motion.p
                 initial={{ opacity: 0, scale: 0.3 }}
                 whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 0.9,
                   delay: 0.8,
@@ -178,6 +184,7 @@ function QnA() {
           <motion.hr
             initial={{ opacity: 0, scale: 1, x: '-100vw' }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.7,
@@ -193,6 +200,7 @@ function QnA() {
             <motion.p
               initial={{ opacity: 0, scale: 0.3 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{
                 duration: 0.9,
                 delay: 0.8,
@@ -209,6 +217,7 @@ function QnA() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.3 }}
                 whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 0.9,
                   delay: 0.7,
@@ -233,6 +242,7 @@ function QnA() {
               <motion.p
                 initial={{ opacity: 0, scale: 0.3 }}
                 whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 0.9,
                   delay: 0.9,
@@ -248,6 +258,7 @@ function QnA() {
           <motion.button
             initial={{ opacity: 0, scale: 0.3 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.6,

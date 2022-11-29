@@ -11,6 +11,7 @@ function Form() {
         <motion.h1
           initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.3,
@@ -24,6 +25,7 @@ function Form() {
         <motion.h1
           initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.6,
@@ -37,6 +39,7 @@ function Form() {
         <motion.p
           initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.9,
@@ -53,6 +56,7 @@ function Form() {
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.9,
             delay: 0.6,
