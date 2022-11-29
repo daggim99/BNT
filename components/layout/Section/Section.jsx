@@ -16,7 +16,7 @@ const Section = (props) => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`self-end row-start-1 row-end-2 px-12 sm:px-9 text-2xl sm:text-3xl font-lato-n900 font-bold md:text-[45px] lg:text-[55px] text-black ${cardTitle}`}
+        className={`self-end row-start-1 row-end-2 px-12 sm:px-9 text-4xl sm:text-5xl font-lato-n900 font-bold md:text-[45px] lg:text-[55px] text-black ${cardTitle}`}
       >
         {title}
       </motion.h1>
@@ -24,7 +24,7 @@ const Section = (props) => {
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`px-16 sm:px-16 md:px-0 text-center row-start-2 row-end-3 font-roboto text-[14px] sm:text-[15px] md:text-[18px] lg:text-[20px] leading-[18px] sm:leading-[21px] md:leading-[34.84px] ${cardText}`}
+        className={`px-14 sm:px-16 md:px-0 text-center row-start-2 row-end-3 font-roboto text-[18.5px] sm:text-[19.4px] md:text-[19.7px] lg:text-[20px] leading-[31px] sm:leading-[32px] md:leading-[34.84px] ${cardText}`}
       >
         {text}
       </motion.p>

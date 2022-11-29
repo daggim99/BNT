@@ -99,12 +99,20 @@ const ProductItem = () => {
               className={`transition-d w-full h-full block object-cover justify-self-center self-stretch group-hover:scale-105`}
             />
           </figure>
-          <figure
-            style={logo}
+          <div
             className={`${
               left ? 'border-[#FFF1C9]' : 'border-[#DAF4F6]'
-            } bg-white my-6 transition-d filter brightness-100 peer-hover:brightness-110 lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-60 lg:h-32 text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover`}
-          />
+            } z-50 hover:z-50 bg-white my-6 transition-d filter brightness-100 peer-hover:brightness-110 lg:-translate-y-[50%] border-2 md:border-4 shadow-md md:shadow-lg lg:shadow-xl rounded-full relative w-48 h-24 md:w-52 md:h-28 lg:w-[290px] lg:h-[144px] text-center col-start-1 col-end-3 row-start-1 row-end-2 justify-self-center bg-center bg-no-repeat bg-cover grid grid-cols-1 grid-rows-1`}
+          >
+            <figure
+              style={logo}
+              className={`${
+                left
+                  ? 'w-[80px] h-[50px] sm:w-[125px] sm:h-[75px] md:w-[175px] md:h-[93px]  lg:w-[196px] lg:h-[100.98px]'
+                  : 'w-[115px] h-[55px] sm:w-[118px] sm:h-[65px] md:w-[123px] md:h-[75px] lg:w-[135px] lg:h-[88px]'
+              } bg-white z-50 hover:z-50 justify-self-center self-center`}
+            />
+          </div>
           <div
             className={`z-10 ${
               left
@@ -117,7 +125,7 @@ const ProductItem = () => {
                 left
                   ? 'mt-14 md:mt-0 text-center md:text-right'
                   : 'mt-14 md:mt-0 text-center md:text-left'
-              } transition-d filter brightness-100 peer-hover:brightness-200 text-white font-lato-n900 text-[30px] md:text-[45px]  lg:text-[65px]`}
+              } transition-d filter brightness-100 peer-hover:brightness-200 text-white font-lato-n900 text-[50px] sm:text-[45px] md:text-[60px]  lg:text-[65px]`}
             >
               {product.title}
             </h2>
@@ -132,7 +140,7 @@ const ProductItem = () => {
             <p
               className={`transition-d filter brightness-100 peer-hover:brightness-200 ${
                 left ? 'text-center md:text-right ' : 'text-center md:text-left'
-              } pt-14 md:pt-0 text-base md:text-[15px] lg:text-[20px] lg:leading-[34.84px]`}
+              } pt-14 md:pt-0 text-[19.7px] sm:text-[19.8px]  md:text-[19.9px] lg:text-[20px] leading-[31px] sm:leading-[32px] md:leading-[33px] lg:leading-[34.84px]`}
             >
               {product.text}
             </p>

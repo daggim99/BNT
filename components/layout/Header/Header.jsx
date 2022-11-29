@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header
       style={backgroundImage}
-      className={`h-[122vh] sm:h-[120vh] overflow-scroll sm:overflow-hidden md:h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
+      className={`h-[105vh] sm:h-[104vh] overflow-scroll sm:overflow-hidden md:h-[115vh] align-bottom bg-cover bg-center bg-no-repeat col-start-1 col-end-13 grid grid-cols-[minmax(min-content,_0.7fr)] justify-center grid-rows-[2fr_repeat(2,_0.3fr)_1fr] gap-y-9`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
@@ -29,7 +29,7 @@ const Header = () => {
         transition={{ duration: 0.9, type: 'spring', bounce: 0.4 }}
         className={`row-start-1 row-span-1 align-end row-end-2 self-end justify-self-center lg:w-[764px]`}
       >
-        <h1 className="font-oswald-n700 text-white text-center font-bold text-2xl sm:text-4xl md:text-7xl lg:text-[100px]">
+        <h1 className="font-oswald-n700 text-white text-center font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[100px]">
           <span className="text-[#EEBC43] md:font-lato-n900">BNT</span>{' '}
           Beverages
         </h1>
@@ -40,7 +40,7 @@ const Header = () => {
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
         className={`row-start-2 row-span-1 self-start justify-self-center text-center lg:w-[560px] pb-9`}
       >
-        <p className="leading-[16px] sm:leading-[23.44px] text-white text-base sm:text-[16px] md:text-[20px] font-roboto ">
+        <p className="leading-[24.3px] sm:leading-[23.44px] text-white text-[17.9px] sm:text-[18px] md:text-[20px] font-roboto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
           eros, pulvinar facilisis id nisi.
         </p>
