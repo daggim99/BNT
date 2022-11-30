@@ -10,7 +10,7 @@ const Footer = () => {
       <article
         className={`col-start-1 col-span-full md:col-end-3 row-start-2 row-end-4 grid grid-cols-3 grid-rows-2 lg:grid-rows-1 `}
       >
-        <p className="self-center px-3 md:px-0 text-white text-center font-roboto text-[12px] sm:text-[14px] md:text-[18px] leading-[14.9px] sm:leading-[16px] md:leading-[18.44px] md:w-[320px] col-start-1 col-end-4 lg:col-end-2 lg:text-left ml-3 md:ml-14 lg:ml-20 ">
+        <p className="self-end px-3 md:px-0 text-white text-center font-roboto text-[12px] sm:text-[14px] md:text-[18px] leading-[14.9px] sm:leading-[16px] md:leading-[18.44px] md:w-[320px] col-start-1 col-end-4 lg:col-end-2 lg:text-left ml-3 md:ml-14 lg:ml-20 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper
         </p>
