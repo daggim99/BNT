@@ -6,7 +6,7 @@ const TeamCarousel = (props) => {
   const { firstName, jobPosition } = props
 
   return (
-    <section className={`grid grid-cols-2 grid-rows-2 mb-6`}>
+    <section className={`overflow-x-clip grid grid-cols-2 grid-rows-2 mb-6`}>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         viewport={{ once: true }}
@@ -27,7 +27,7 @@ const TeamCarousel = (props) => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className={`row-start-1 row-end-2 text-[#000000] text-[30px] md:text-[40px] leading-[40px] font-lato-n700`}
+          className={`row-start-1 row-end-2 text-[#000000] text-[20px] md:text-[37px] leading-[40px] font-lato-n700`}
         >
           {firstName}
         </motion.h1>
@@ -41,7 +41,7 @@ const TeamCarousel = (props) => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className={`row-start-2 row-span-1 font-roboto-n300 text-[#757575] text-[18px] md:text-[30px]`}
+          className={`row-start-2 row-span-1 font-roboto-n300 text-[#757575] text-[15px] md:text-[30px]`}
         >
           {jobPosition}
         </motion.p>

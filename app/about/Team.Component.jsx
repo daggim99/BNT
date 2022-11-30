@@ -49,10 +49,10 @@ const Team = () => {
 
   return (
     <section
-      className={`overflow-scroll md:overflow-clip bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[90vh] sm:h-[85vh] md:h-[80vh] lg:h-[75vh] xl:[70vh] 2xl:h-[65vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[min-content_min-content_min-content] md:grid-rows-[1fr_min-content] gap-y-12 md:gap-y-0`}
+      className={`overflow-x-clip overflow-scroll md:overflow-clip bg-gradient-to-b from-[#FFF1C9] to-transparent pt-16 mt-16 h-[110vh] sm:h-[90vh] md:h-[80vh] lg:h-[75vh] xl:[70vh] 2xl:h-[65vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[min-content_min-content_min-content] md:grid-rows-[1fr_min-content] gap-y-12 md:gap-y-0`}
     >
       <div
-        className={` justify-self-center col-start-1 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content] gap-y-16`}
+        className={`justify-self-start md:justify-self-center col-start-1 col-span-1 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[min-content_min-content] gap-y-9`}
       >
         <div
           className={`lg:pt-12 xl:pt-16 2xl:pt-24 justify-self-center md:justify-self-start self-center text-[30px] md:text-[67px] text-[#525252]`}

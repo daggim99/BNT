@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const CompanyFormation = () => {
   return (
     <section
-      className={`pt-16 pb-12 sm:pb-9 md:pb-6 lg:pb-3 xl:pb-2 2xl:pb:1 overflow-scroll md:overflow-clip px-12 md:px-0 md:mt-0 h-[45vh] sm:h-[40vh] xl:h-[40vh] 2xl:h-[25vh]  grid grid-cols-1 grid-rows-[min-content_min-content] md:gap-6`}
+      className={`pt-12 pb-11 sm:pb-9 md:pb-6 lg:pb-3 xl:pb-2 2xl:pb:1 overflow-scroll md:overflow-clip px-12 md:px-0 md:mt-0 h-[50vh] sm:h-[40vh] xl:h-[40vh] 2xl:h-[25vh]  grid grid-cols-1 grid-rows-[min-content_min-content] md:gap-6`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
@@ -25,7 +25,7 @@ const CompanyFormation = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`row-start-2 row-span-1 justify-self-center self-start text-center lg:w-[940px]`}
+        className={`overflow-x-clip row-start-2 row-span-1 justify-self-center self-start text-center lg:w-[940px]`}
       >
         <p
           className={`text-[#BCBCBC] font-roboto text-center lg:leading-[34.84px] lg:text-[20px]`}

@@ -33,7 +33,7 @@ const AboutHero = () => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className="justify-self-center lg:w-[600px] align-middle leading-[110.4px] font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[92px] text-[#525252] text-center"
+          className="overflow-x-clip justify-self-center lg:w-[600px] align-middle leading-[110.4px] font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[92px] text-[#525252] text-center"
         >
           About Us
         </motion.h1>
