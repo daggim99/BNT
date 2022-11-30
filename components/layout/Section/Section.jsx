@@ -10,14 +10,14 @@ const Section = (props) => {
 
   return (
     <section
-      className={`${card} max-h-[45vh] min-h-[456px] grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
+      className={`${card} max-h-[50vh] min-h-[527px] sm:min-h-[536px] grid grid-cols-[1fr] grid-rows-[1fr_1fr_1fr] w-screen gap-y-3`}
     >
       <motion.h1
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-        className={`self-end row-start-1 row-end-2 px-12 sm:px-9 text-4xl sm:text-5xl font-lato-n900 font-bold md:text-[45px] lg:text-[55px] text-black ${cardTitle}`}
+        className={`self-end row-start-1 row-end-2 px-12 pt-12 pb-9 sm:px-9 text-4xl sm:text-5xl font-lato-n900 font-bold md:text-[45px] lg:text-[55px] text-black ${cardTitle}`}
       >
         {title}
       </motion.h1>

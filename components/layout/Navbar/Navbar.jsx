@@ -48,8 +48,8 @@ export default function Navbar(index) {
                 <figure className="transition-d justify-self-center md:justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-14 lg:ml-20">
                   <Link href="/" className="block lg:hidden">
                     <Image
-                      width="70"
-                      height="70"
+                      width="90"
+                      height="90"
                       className="p-0"
                       src="/images/Logo/BNTLogo.svg"
                       alt="Your Company"

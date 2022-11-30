@@ -19,7 +19,7 @@ const FooterNav = () => {
 
   return (
     <nav
-      className={`text-white h-[12vh] transition-d bg-[#4A171E] transition-d hover:bg-gradient-to-t col-start-1 col-end-3 row-start-1 row-end-2 grid grid-cols-1 grid-rows-2 md:grid-cols-[minmax(60px,_0.15fr)_1fr] md:grid-rows-[12vh]`}
+      className={`text-white h-[16vh] transition-d bg-[#4A171E] transition-d hover:bg-gradient-to-t col-start-1 col-end-3 row-start-1 row-end-2 grid grid-cols-1 grid-rows-[1fr_0.3fr] md:grid-cols-[minmax(60px,_0.15fr)_1fr] md:grid-rows-[12vh]`}
     >
       <Logo />
       <div className="justify-self-center md:justify-self-end self-center col-start-1 md:col-start-2 col-span-full md:col-end-3 row-start-2 row-span-1 md:row-start-1 md:row-end-2 grid grid-cols-4 gap-4 m-auto lg:ml-72 md:mr-14 lg:mr-20">
