@@ -31,7 +31,7 @@ const CoreValues = () => {
           <motion.div
             initial={{ opacity: 0, scale: 1, y: 105 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.5,
@@ -44,7 +44,7 @@ const CoreValues = () => {
               <Image
                 width={100}
                 height={100}
-                src={`/images/about/hand-icon.png`}
+                src={`/images/About/hand-icon.png`}
                 alt={`hand-icon`}
                 className={`w-full h-full object-contain`}
               />
@@ -74,7 +74,7 @@ const CoreValues = () => {
           <motion.div
             initial={{ opacity: 0, scale: 1, y: 105 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.8,
@@ -87,7 +87,7 @@ const CoreValues = () => {
               <Image
                 width={100}
                 height={100}
-                src={`/images/about/database-icon.png`}
+                src={`/images/About/database-icon.png`}
                 alt={`hand-icon`}
                 className={`w-full h-full object-contain`}
               />
@@ -117,7 +117,7 @@ const CoreValues = () => {
           <motion.div
             initial={{ opacity: 0, scale: 1, y: 105 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 1.1,
@@ -130,7 +130,7 @@ const CoreValues = () => {
               <Image
                 width={100}
                 height={100}
-                src={`/images/about/text-icon.png`}
+                src={`/images/About/text-icon.png`}
                 alt={`hand-icon`}
                 className={`w-full h-full object-contain`}
               />
