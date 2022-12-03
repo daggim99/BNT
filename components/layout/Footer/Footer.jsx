@@ -5,7 +5,7 @@ import Socials from './Socials'
 
 const Footer = () => {
   return (
-    <footer className="overflow-scroll lg:overflow-hidden h-[55vh] sm:h-[50vh] md:h-[35vh] bg-[#4A171E] grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-[repeat(3,_min-content)]">
+    <footer className="overflow-scroll lg:overflow-hidden h-[55vh] sm:h-[50vh] md:h-[35vh] xl:h-[30vh] 2xl:h-[25vh] bg-[#4A171E] grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-[repeat(3,_min-content)]">
       <FooterNav />
       <article
         className={`self-start col-start-1 md:w-[80vw] md:m-auto  col-span-full md:col-end-3 row-start-2 row-end-3 grid grid-cols-3 grid-rows-2 lg:grid-rows-1 `}
