@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+// import { useState } from 'react'
 
 import Image from 'next/image'
 
@@ -35,20 +35,20 @@ const blogs = [
 ]
 
 const Blog = () => {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-  const handleBlogScrollDown = () => {
-    if (count === blogs.length - 1) setCount(0)
-    else setCount(count + 1)
-  }
+  // const handleBlogScrollDown = () => {
+  //   if (count === blogs.length - 1) setCount(0)
+  //   else setCount(count + 1)
+  // }
 
-  const handleBlogScrollUp = () => {
-    setCount(count - 1)
-  }
+  // const handleBlogScrollUp = () => {
+  //   setCount(count - 1)
+  // }
 
   return (
     <section
-      className={`h-[115vh] md:h-[75vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr_0.3fr] md:grid-rows-[1fr_0.3fr]`}
+      className={`h-[115vh] md:h-[75vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6, x: -333 }}
@@ -68,12 +68,12 @@ const Blog = () => {
           <h
             className={`self-end text-[27px] md:text-[40px] text-black font-roboto-n700 font-bold text-center md:text-left`}
           >
-            {blogs[count].title}
+            {blogs[0].title}
           </h>
           <p
             className={`self-center md:w-[437px] text-[20] md:text-[24px] font-roboto-n700 leading-[28.13px] text-[#000000] text-center md:text-left`}
           >
-            {blogs[count].text}
+            {blogs[0].text}
           </p>
           <div
             className={`justify-self-center md:justify-self-start self-start md:w-[195px] md:h-[57px] text-[#4A171E] bg-[#4A171E] grid grid-cols-1 grid-rows-1`}
@@ -106,7 +106,7 @@ const Blog = () => {
           className="w-full h-full object-cover"
         />
       </motion.div>
-      <motion.button
+      {/* <motion.button
         initial={{ opacity: 0, scale: 1.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -158,7 +158,7 @@ const Blog = () => {
         ) : (
           ' '
         )}
-      </motion.button>
+      </motion.button> */}
     </section>
   )
 }

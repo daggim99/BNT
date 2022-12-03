@@ -1,15 +1,16 @@
 'use client'
 
 import BlogHero from './Hero.Component'
-import Content from './Content.Component'
+import Section from '../about/Section.Component'
 import Blog from './Blog.Components'
-import UnderConstruction from './Player.component'
 
 function BlogPage() {
   return (
     <>
       <BlogHero />
-      <Content />
+      <Section left={true} title={`Blog Title`} className={`mt-24`} />
+      <Section left={false} title={`Blog Title`} className={`mt-36`} />
+      <Section left={true} title={`Blog Title`} className={`mt-36 mb-24`} />
       <Blog />
     </>
   )

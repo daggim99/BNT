@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const BlogHero = () => {
   const style = {
-    backgroundImage: `linear-gradient(to bottom, #E5B957D9,  #E5B957D9), url('/images/About/hero-pattern-1n2.png')`,
+    backgroundImage: `linear-gradient(to bottom, rgba(255, 241, 201, 1),  rgba(255, 236, 177, 0.9)), url('/images/About/hero-pattern-1n2.png')`,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -33,7 +33,7 @@ const BlogHero = () => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className="uppercase justify-self-center lg:w-[600px] align-middle leading-[110.4px] font-roboto-n700 font-bold text-4xl md:text-6xl lg:text-[92px] text-white text-center"
+          className="capitalize justify-self-center lg:w-[600px] align-middle leading-[110.4px] font-lato-n900 font-bold text-4xl md:text-6xl lg:text-[92px] text-black text-center"
         >
           News Feed
         </motion.h1>
@@ -47,10 +47,10 @@ const BlogHero = () => {
             type: 'spring',
             bounce: 0.4,
           }}
-          className="justify-self-center lg:w-[747px] md:leading-[37.5px] font-roboto-n700 text-base md:text-lg lg:text-[32px] text-center text-[#FFFFFF]"
+          className="justify-self-center lg:w-[676px] md:leading-[37.5px] font-roboto text-base md:text-lg lg:text-[20px] text-center text-black"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
-          eros, pulvinar facilisis justo moll.{' '}
+          eros, pulvinar facilisis justo mollis, auctor consequat urna.
         </motion.p>
       </div>
     </section>
