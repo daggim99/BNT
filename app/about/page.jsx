@@ -11,7 +11,7 @@ function About() {
       <AboutHero />
       <CompanyFormation />
       <Section left={true} title="Our Mission" className={`md:mt-20`} />
-      <Section left={false} title="Our Vision" className={`md:mt-20`} />
+      <Section left={false} title="Our Vision" className={`md:mt-24`} />
       <CoreValues />
       <Team />
       <TrustedPartners />
