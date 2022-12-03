@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const CompanyFormation = () => {
   return (
     <section
-      className={`pt-12 pb-11 sm:pb-9 md:pb-6 lg:pb-3 xl:pb-2 2xl:pb:1 overflow-scroll md:overflow-clip px-12 md:px-0 md:mt-0 h-[50vh] sm:h-[40vh] xl:h-[40vh] 2xl:h-[25vh]  grid grid-cols-1 grid-rows-[min-content_min-content] md:gap-6`}
+      className={`pt-12 p pb-12 overflow-scroll md:overflow-clip px-12 md:px-0 md:mt-0 max-h-[50vh] sm:max-h-[40vh] lg:min-h-[300px] grid grid-cols-1 grid-rows-[min-content_min-content] md:gap-6`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6 }}
