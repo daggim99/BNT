@@ -52,7 +52,9 @@ function QnA() {
   }
 
   return (
-    <section className={`mt-16 w-screen grid grid-cols-[1fr_1fr] grid-rows-1`}>
+    <section
+      className={`mt-16 mb-9 w-screen grid grid-cols-[1fr_1fr] grid-rows-1`}
+    >
       <motion.div
         initial={{ opacity: 0, scale: 0.3 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -117,7 +119,7 @@ function QnA() {
           </motion.div>
         </div>
         <div
-          className={`row-start-2 row-span-1 grid grid-rows-[1fr_0.1fr_1fr_0.3fr] gap-y-6`}
+          className={`row-start-2 row-span-1 grid grid-rows-[1fr_0.1fr_1fr] gap-y-6`}
         >
           <div
             className={`row-start-1 row-span-1 grid grid-cols-1 grid-rows-2`}
@@ -255,33 +257,6 @@ function QnA() {
               </motion.p>
             </div>
           </div>
-          <motion.button
-            initial={{ opacity: 0, scale: 0.3 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.9,
-              delay: 0.6,
-              type: 'spring',
-              bounce: 0.4,
-            }}
-            onClick={handleDownScroll}
-            className={`justify-self-center row-start-4 col-span-1`}
-          >
-            <svg
-              width="105"
-              height="46"
-              viewBox="0 0 105 46"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.87695 1.93799L56.2462 43L103.015 1.93799"
-                stroke="#878787"
-                strokeWidth="4"
-              />
-            </svg>
-          </motion.button>
         </div>
       </div>
     </section>

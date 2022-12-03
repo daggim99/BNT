@@ -43,7 +43,9 @@ const GetInTouch = () => {
           bibendum metus. Donec scelerisque sollicitudin enim eu venenatis.
         </p>
       </motion.div>
-      <div className={`row-start-3 row-span-1 justify-self-center self-start`}>
+      <div
+        className={`mt-12 mb-12 row-start-3 row-span-1 justify-self-center self-start`}
+      >
         <Office />
       </div>
     </section>
