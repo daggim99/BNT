@@ -25,7 +25,9 @@ const Section = (props) => {
           height={100}
           src={'/images/About/imageHigh.png'}
           alt={'image'}
-          className="w-full object-cover filter brightness-50 md:brightness-100 -z-50 object-center md:object-contain h-full"
+          className={`${
+            left ? 'lg:object-right' : 'lg:object-left'
+          } w-full object-cover filter brightness-50 md:brightness-100 -z-50 object-center md:object-contain h-full`}
         />
       </motion.div>
       <div
