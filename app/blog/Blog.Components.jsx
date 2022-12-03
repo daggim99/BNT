@@ -48,7 +48,7 @@ const Blog = () => {
 
   return (
     <section
-      className={`h-[115vh] md:h-[75vh] lg:h-[590px] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
+      className={`h-[115vh] mb-9 md:h-[75vh] lg:h-[590px] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6, x: -333 }}
