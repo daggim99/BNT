@@ -10,7 +10,7 @@ const Section = (props) => {
   const { left, title } = props
 
   return (
-    <section className="lg:my-16 overflow-x-hidden lg:overflow-clip h-[70vh] md:h-[60vh] lg:h-[377px] rounded-none w-full overflow-scroll md:overflow-visible m-0 md:w-[80vw] md:m-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[377px] gap-y-24 md:gap-y-0 gap-x-12">
+    <section className="lg:my-16 overflow-x-hidden lg:overflow-clip h-[70vh] md:h-[60vh] lg:h-[377px] rounded-none w-full overflow-scroll md:overflow-visible m-0 md:w-[80vw] md:m-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[377px] gap-y-24 md:gap-y-0 gap-x-2">
       <motion.div
         initial={{ opacity: 0, scale: 0, x: 14 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}

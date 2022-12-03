@@ -31,7 +31,7 @@ const CoreValues = () => {
           <motion.div
             initial={{ opacity: 0, scale: 1, y: 105 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.5,
@@ -74,7 +74,7 @@ const CoreValues = () => {
           <motion.div
             initial={{ opacity: 0, scale: 1, y: 105 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 0.8,
@@ -117,7 +117,7 @@ const CoreValues = () => {
           <motion.div
             initial={{ opacity: 0, scale: 1, y: 105 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.9,
               delay: 1.1,
