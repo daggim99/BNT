@@ -48,7 +48,7 @@ const Blog = () => {
 
   return (
     <section
-      className={`h-[115vh] md:h-[75vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
+      className={`h-[115vh] md:h-[75vh] lg:h-[590px] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
     >
       <motion.div
         initial={{ opacity: 0, scale: 1.6, x: -333 }}
@@ -101,7 +101,7 @@ const Blog = () => {
         <Image
           width={100}
           height={100}
-          src="/images/blog/image.png"
+          src="/images/blog/blog.png"
           alt="Blog"
           className="w-full h-full object-cover"
         />
