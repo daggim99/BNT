@@ -6,7 +6,7 @@ const initialState = [
   { name: 'Home', href: '/', current: true, index: 0 },
   { name: 'About', href: '/about', current: false, index: 1 },
   { name: 'Blog', href: '/blog', current: false, index: 2 },
-  { name: 'Contact Us', href: '/contact', current: false, index: 3 },
+  { name: 'ContactUs', href: '/contact', current: false, index: 3 },
 ]
 
 const navigationSlice = createSlice({

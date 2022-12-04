@@ -7,17 +7,25 @@ import Image from 'next/image'
 import Button from '/components/UI/Button/Button'
 
 const Section = (props) => {
-  const { left, title, className } = props
+  const { left, title, animate, className } = props
 
   return (
     <section
-      className={`overflow-x-hidden lg:overflow-clip h-[70vh] md:h-[60vh] lg:h-[377px] rounded-none w-full overflow-scroll md:overflow-visible m-0 md:w-[80vw] md:mx-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[377px] gap-y-24 md:gap-y-0 md:gap-x-5 lg:gap-x-2 ${className}`}
+      className={`overflow-x-hidden lg:overflow-clip h-[70vh] md:h-[60vh] lg:h-[377px] rounded-none w-full overflow-scroll md:overflow-visible m-0 md:w-[80vw] md:mx-auto grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[377px] gap-y-24 md:gap-y-0 md:gap-x-12 xl:gap-x-0 ${className}`}
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0, x: 14 }}
+        initial={
+          animate
+            ? { opacity: 0, scale: 0, x: 14 }
+            : { opacity: 0, scale: 1, x: 3 }
+        }
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.9, delay: 0.3, type: 'spring', bounce: 0.4 }}
+        transition={
+          animate
+            ? { duration: 0.9, delay: 0.3, type: 'spring', bounce: 0.4 }
+            : { duration: 0.2, type: 'spring', bounce: 0.4 }
+        }
         className={`self-start col-span-full md:col-span-1 row-span-full md:row-start-1 md:row-span-1 md:col-start-${
           left ? '2' : '1'
         } w-full h-full block col-span-1 row-span-full`}
@@ -38,15 +46,18 @@ const Section = (props) => {
         } filter brightness-200 self-center col-span-1 row-span-full grid grid-cols-[1fr] grid-rows-[81px_172px_59.96px] gap-y-3`}
       >
         <motion.div
-          initial={{ opacity: 0, scale: 0, x: 14 }}
+          initial={
+            animate
+              ? { opacity: 0, scale: 0, x: 14 }
+              : { opacity: 0, scale: 1, x: 3 }
+          }
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{
-            duration: 0.9,
-            delay: 0.3,
-            type: 'spring',
-            bounce: 0.4,
-          }}
+          transition={
+            animate
+              ? { duration: 0.9, delay: 0.5, type: 'spring', bounce: 0.4 }
+              : { duration: 0.2, type: 'spring', bounce: 0.4 }
+          }
           className={`w-full md:w-[575px]`}
         >
           <h1 className="font-lato-n900 text-[#525252] px-9 md:px-0 text-[40px] md:text-[45px] lg:text-[67px] leading-[80.4px] font-bold">
@@ -54,15 +65,18 @@ const Section = (props) => {
           </h1>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0, x: 14 }}
+          initial={
+            animate
+              ? { opacity: 0, scale: 0, x: 14 }
+              : { opacity: 0, scale: 1, x: 3 }
+          }
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{
-            duration: 0.9,
-            delay: 0.5,
-            type: 'spring',
-            bounce: 0.4,
-          }}
+          transition={
+            animate
+              ? { duration: 0.9, delay: 0.7, type: 'spring', bounce: 0.4 }
+              : { duration: 0.2, type: 'spring', bounce: 0.4 }
+          }
           className={`w-full md:w-[608px]`}
         >
           <p
@@ -75,15 +89,18 @@ const Section = (props) => {
           </p>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0, x: 14 }}
+          initial={
+            animate
+              ? { opacity: 0, scale: 0, x: 14 }
+              : { opacity: 0, scale: 1, x: 3 }
+          }
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{
-            duration: 0.9,
-            delay: 0.7,
-            type: 'spring',
-            bounce: 0.4,
-          }}
+          transition={
+            animate
+              ? { duration: 0.9, delay: 0.9, type: 'spring', bounce: 0.4 }
+              : { duration: 0.2, type: 'spring', bounce: 0.4 }
+          }
           className={`pt-12 md:pt-0 px-9 md:px-0 self-center`}
         >
           <Button

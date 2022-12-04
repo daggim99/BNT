@@ -51,7 +51,7 @@ const Blog = () => {
       className={`h-[115vh] mb-9 md:h-[75vh] lg:h-[590px] grid grid-cols-1 md:grid-cols-[1fr_1fr] grid-rows-[1fr_1fr] md:grid-rows-[1fr]`}
     >
       <motion.div
-        initial={{ opacity: 0, scale: 1.6, x: -333 }}
+        initial={{ opacity: 0, scale: 1, x: '-14vw' }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{
@@ -87,12 +87,12 @@ const Blog = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, scale: 1.6, x: 333 }}
+        initial={{ opacity: 0, scale: 1, x: '14vw' }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{
           duration: 0.9,
-          delay: 0.6,
+          delay: 0.5,
           type: 'spring',
           bounce: 0.4,
         }}

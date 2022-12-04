@@ -27,7 +27,7 @@ export default function Navbar(index) {
   return (
     <Disclosure
       as="nav"
-      className="opacity-80 hover:opacity-90 z-50 absolute top-[5%] w-screen col-start-1 col-end-13 bg-transparent"
+      className="z-50 absolute top-[5%] w-screen col-start-1 col-end-13 bg-transparent"
     >
       {({ open }) => (
         <>
@@ -45,7 +45,7 @@ export default function Navbar(index) {
                 </Disclosure.Button>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-self-center md:justify-self-start justify-center md:justify-start sm:justify-between w-screen m-0">
-                <figure className="transition-d justify-self-center md:justify-self-start hover:invert hover:drop-shadow-[12px_12px_16px_red] hover:scale-105 md:ml-14 lg:ml-20">
+                <figure className="transition-d justify-self-center md:justify-self-start md:ml-14 lg:ml-20">
                   <Link href="/" className="block lg:hidden">
                     <Image
                       width="90"
@@ -69,7 +69,7 @@ export default function Navbar(index) {
                   </Link>
                 </figure>
                 <div className="hidden sm:block items-stretch justify-self-end self-center md:mr-14 lg:mr-20 ">
-                  <div className="grid grid-cols-4 gap-x-5">
+                  <div className="grid grid-cols-[repeat(4,_min-content)] gap-x-12">
                     {navigation.map((item, inx) => (
                       <Link
                         href={item.href}
@@ -77,9 +77,9 @@ export default function Navbar(index) {
                         onClick={(e) => handleNavigation(inx)}
                         className={classNames(
                           item.current
-                            ? 'font-roboto text-amber-500 border-b-4 border-amber-400 text-center self-center'
-                            : 'text-black font-roboto-n500 font-bold w-full h-full self-center text-center justify-self-center self-center hover:cursor-pointer hover:scale-95 hover:border-b-4 hover:border-amber-400',
-                          ' px-3 py-2 rounded-md text-sm font-bold',
+                            ? 'font-roboto text-amber-500 border-b-[1px] pb-1 border-amber-500 text-center self-center'
+                            : 'text-black font-roboto-n500 font-bold w-full h-full text-center justify-self-center self-center hover:cursor-pointer hover:text-amber-500',
+                          ' transition-d text-sm font-bold',
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -104,7 +104,7 @@ export default function Navbar(index) {
                         item.current
                           ? 'bg-gray-900 text-white ml-3'
                           : 'text-gray-300 hover:bg-gray-700 hover:text-white ml-3',
-                        'block px-3 py-2 rounded-md text-base font-medium',
+                        'block px-3 py-2 text-base font-medium',
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >

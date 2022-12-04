@@ -8,9 +8,24 @@ function BlogPage() {
   return (
     <>
       <BlogHero />
-      <Section left={true} title={`Blog Title`} className={`mt-24`} />
-      <Section left={false} title={`Blog Title`} className={`mt-36`} />
-      <Section left={true} title={`Blog Title`} className={`mt-36 mb-24`} />
+      <Section
+        left={true}
+        title={`Blog Title`}
+        animate={false}
+        className={`mt-24`}
+      />
+      <Section
+        left={false}
+        title={`Blog Title`}
+        animate={false}
+        className={`mt-36`}
+      />
+      <Section
+        left={true}
+        title={`Blog Title`}
+        animate={false}
+        className={`mt-36 mb-24`}
+      />
       <Blog />
     </>
   )
