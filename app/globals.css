@@ -11,3 +11,26 @@
 :root {
   color-scheme: light only;
 }
+
+.swiper-button-prev {
+  background-image: url('/images/Brand/Dega/Slides/Arrows/LeftArrow.png');
+}
+
+.swiper-button-next {
+  background-image: url('/images/Brand/Dega/Slides/Arrows/RightArrow.png');
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* color: #8cc9d7 !important;
+  z-index: 10000; */
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}

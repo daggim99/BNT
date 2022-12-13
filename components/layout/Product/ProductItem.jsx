@@ -153,7 +153,9 @@ const ProductItem = () => {
             } filter brightness-100 peer-hover:brightness-200 z-10 col-start-1 col-end-2 row-start-4 row-span-1   text-white self-center mt-9 mb-12`}
           >
             <Button
-              className={`capitalize px-6 py-1 md:px-0 md:py-0 border-[3px] lg:w-[195px] lg:h-[57px] ${
+              to={1}
+              link={'brands/dega'}
+              className={`capitalize px-6 py-2 border-[3px] lg:w-[195px] lg:h-[57px] ${
                 left ? 'border-[#00D1FF]' : 'border-[#FFC107]'
               } bg-transparent  text-white text-base md:text-[16px] lg:text-[25px] text-center font-roboto-n500`}
               title="Learn More"

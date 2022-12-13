@@ -9,6 +9,11 @@ import Footer from '../components/layout/Footer/Footer'
 import Badge from '../components/UI/Button/Badge'
 
 import './globals.css'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 export default function RootLayout({ children }) {
   return (

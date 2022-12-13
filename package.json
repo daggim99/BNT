@@ -27,6 +27,7 @@
     "react-redux": "^8.0.5",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.2",
+    "swiper": "^8.4.5",
     "tw-elements": "1.0.0-alpha12"
   },
   "devDependencies": {
