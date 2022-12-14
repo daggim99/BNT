@@ -1,14 +1,14 @@
 import DegaHero from './Hero.Component'
-import Quench from './Quench.Component'
-import Slider from './Slider.Component'
+import QuenchSection from './QuenchSection.Component'
+import BenefitsSection from './BenefitSection.Component'
 import UnderConstruction from '../../blog/Player.component'
 
 export default function Dega() {
   return (
     <>
       <DegaHero />
-      <Quench />
-      <Slider />
+      <QuenchSection />
+      <BenefitsSection />
       <UnderConstruction />
     </>
   )
