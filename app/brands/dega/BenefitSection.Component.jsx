@@ -3,7 +3,7 @@ import Benefits from './Benefits.Component'
 
 const BenefitsSection = () => {
   return (
-    <section>
+    <section className={`w-screen`}>
       <Benefit />
       <Benefits />
     </section>

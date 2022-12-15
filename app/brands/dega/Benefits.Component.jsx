@@ -69,7 +69,7 @@ const benefits = [
 const Benefits = () => {
   return (
     <article
-      className={`grid grid-cols-[min-content_150px_150px_min-content] grid-rows-3 gap-x-14`}
+      className={`w-screen justify-items-stretch grid grid-cols-[auto_150px_150px_auto] grid-rows-3 gap-x-14`}
     >
       {benefits.map((benefit) => {
         return (
@@ -86,7 +86,7 @@ const Benefits = () => {
             <div
               className={`self-center ${
                 benefit.left
-                  ? 'lg:w-[345.5px] justify-self-end text-right'
+                  ? 'lg:w-[332px] justify-self-end text-right'
                   : 'lg:w-[330px] justify-self-start'
               } row-start-1 row-span-1 ${
                 benefit.left
