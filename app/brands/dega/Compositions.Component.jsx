@@ -93,6 +93,14 @@ const elements = [
   },
 ]
 
+const style = {
+  backgroundImage: `url('/images/Brand/Dega/backgroundSplash.png')`,
+  backgroundPosition: 'right',
+  backgroundSize: 'contain',
+  backgroundRepeat: 'no-repeat',
+  transform: 'matrix(-0.78, -0.63, -0.63, 0.78, 0, 0)',
+}
+
 function Compositions() {
   return (
     <article className={`grid grid-cols-3 grid-rows-5 gap-y-12`}>
@@ -143,6 +151,10 @@ function Compositions() {
           </div>
         )
       })}
+      <div
+        style={style}
+        className={`justify-self-start col-start-2 col-span-1 row-start-1 row-span-full w-full h-full`}
+      />
       <figure
         className={`justify-self-center col-start-2 col-span-1 row-start-1 row-span-full lg:w-[400px] h-[923px]`}
       >
