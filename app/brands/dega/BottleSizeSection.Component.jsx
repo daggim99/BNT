@@ -4,7 +4,7 @@ import BottleSizes from './BottleSizes.Component'
 
 function BottleSizeSection() {
   return (
-    <section className={`w-screen grid grid-cols-2 grid-rows-1`}>
+    <section className={`mb-16 w-screen grid grid-cols-2 grid-rows-1`}>
       <BottleSizeBackGroundVector />
       <BottleSize />
       <BottleSizes />
