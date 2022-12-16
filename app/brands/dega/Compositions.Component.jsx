@@ -144,14 +144,14 @@ function Compositions() {
         )
       })}
       <figure
-        className={`col-start-2 col-span-1 row-start-1 row-span-full lg:w-[400px] h-[923px]`}
+        className={`justify-self-center col-start-2 col-span-1 row-start-1 row-span-full lg:w-[400px] h-[923px]`}
       >
         <Image
           width={100}
           height={100}
           src={`/images/Brand/Dega/degaWaterBottleWithSplash.png`}
           alt={`Dega Water Bottle`}
-          className={`w-full h-full object-center overflow-visible object-cover`}
+          className={`w-full h-full object-center overflow-visible object-contain`}
         />
       </figure>
     </article>

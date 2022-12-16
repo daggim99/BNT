@@ -1,6 +1,9 @@
 import Image from 'next/image'
 
 const style = {
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
   backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.2), rgb(28, 10, 0, 0.2)), url('/images/Brand/Dega/DegaHero.png')`,
 }
 
