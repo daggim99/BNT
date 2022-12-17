@@ -3,10 +3,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = [
-  { name: 'Home', href: '/', current: true, index: 0 },
-  { name: 'About', href: '/about', current: false, index: 1 },
-  { name: 'Blog', href: '/blog', current: false, index: 2 },
-  { name: 'ContactUs', href: '/contact', current: false, index: 3 },
+  { name: 'Home', href: '/', current: true, index: 0, top: false },
+  { name: 'About', href: '/about', current: false, index: 1, top: false },
+  { name: 'Brands', href: '/#brands', current: false, index: 2, top: true },
+  { name: 'Blog', href: '/blog', current: false, index: 3, top: false },
+  { name: 'ContactUs', href: '/contact', current: false, index: 4, top: false },
 ]
 
 const navigationSlice = createSlice({

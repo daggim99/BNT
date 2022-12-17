@@ -29,7 +29,9 @@ const FooterNav = () => {
       <div className="md:pb-3 justify-self-center md:justify-self-end md:self-end col-start-1 md:col-start-2 col-span-full md:col-end-3 row-start-2 row-span-1 md:row-start-1 md:row-end-2 grid grid-cols-4 gap-4 m-auto md:m-0 lg:ml-72 md:mr-14 lg:mr-20">
         {navigation.map((l, index) => {
           const { name, current, href } = l
-          return (
+          return l.top ? (
+            ''
+          ) : (
             <Link
               href={href}
               key={name}
