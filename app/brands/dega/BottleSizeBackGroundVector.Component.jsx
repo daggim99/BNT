@@ -12,12 +12,12 @@ function BottleSizeBackGroundVector() {
         <path
           d="M-29 173.625V647H1948V109.607C1873.98 202.002 1640.42 313.876 1418.37 313.876C1196.31 313.876 1093.78 264.323 846.221 109.607C501.315 -105.943 69.3443 44.404 -29 173.625Z"
           fill="url(#paint0_linear_65_4)"
-          shape-rendering="crispEdges"
+          shapeRendering="crispEdges"
         />
         <path
           d="M-29 173.625V647H1948V109.607C1873.98 202.002 1640.42 313.876 1418.37 313.876C1196.31 313.876 1093.78 264.323 846.221 109.607C501.315 -105.943 69.3443 44.404 -29 173.625Z"
           stroke="black"
-          shape-rendering="crispEdges"
+          shapeRendering="crispEdges"
         />
       </g>
       <defs>
@@ -28,9 +28,9 @@ function BottleSizeBackGroundVector() {
           width="1986"
           height="655"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -64,8 +64,8 @@ function BottleSizeBackGroundVector() {
           y2="611.055"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D8F2F5" />
-          <stop offset="1" stop-color="#D8F2F5" stop-opacity="0" />
+          <stop stopColor="#D8F2F5" />
+          <stop offset="1" stopColor="#D8F2F5" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

@@ -38,7 +38,9 @@ function BottleSize() {
               key={size.id}
               className={`w-[500px] col-start-${size.col} col-span-1 row-start-${size.row} row-span-1`}
             >
-              <p className={`pl-24 text-[28px] text-[#676767] font-roboto`}>
+              <p
+                className={`pl-24 text-[28px] text-[#676767] leading-[33px] font-roboto`}
+              >
                 {size.size}
               </p>
             </div>

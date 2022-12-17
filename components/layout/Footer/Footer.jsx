@@ -1,11 +1,23 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
+
 import FooterNav from './FooterNav'
 import Socials from './Socials'
 
 const Footer = () => {
+  const pathName = usePathname()
+
+  const color = `${
+    pathName === '/brands/dega'
+      ? 'bg-gradient-to-r from-[#085078] to-[#85D8CE]'
+      : 'bg-[#4A171E]'
+  }`
+  console.log(pathName)
   return (
-    <footer className="overflow-scroll lg:overflow-hidden h-[55vh] sm:h-[50vh] md:h-[35vh] bg-[#4A171E] grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-[repeat(3,_min-content)] gap-y-3">
+    <footer
+      className={`${color} overflow-scroll lg:overflow-hidden h-[55vh] sm:h-[50vh] md:h-[35vh] grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-[repeat(3,_min-content)] gap-y-3`}
+    >
       <FooterNav />
       <article
         className={`self-start col-start-1 md:w-[80vw] md:m-auto  col-span-full md:col-end-3 row-start-2 row-end-3 grid grid-cols-3 grid-rows-2 lg:grid-rows-1 `}

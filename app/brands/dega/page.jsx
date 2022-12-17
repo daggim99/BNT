@@ -3,7 +3,8 @@ import QuenchSection from './QuenchSection.Component'
 import BenefitsSection from './BenefitSection.Component'
 import CompositionSection from './CompositionSection.Component'
 import BottleSizeSection from './BottleSizeSection.Component'
-import UnderConstruction from '../../blog/Player.component'
+import Stat from './Stat.Component'
+import BrandAmbassador from './BrandAmbassador.Component'
 
 export default function Dega() {
   return (
@@ -13,7 +14,8 @@ export default function Dega() {
       <BenefitsSection />
       <CompositionSection />
       <BottleSizeSection />
-      <UnderConstruction />
+      <Stat />
+      <BrandAmbassador />
     </>
   )
 }

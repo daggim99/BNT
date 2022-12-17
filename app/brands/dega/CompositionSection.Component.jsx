@@ -5,7 +5,7 @@ import Compositions from './Compositions.Component'
 
 function CompositionSection() {
   return (
-    <section className={`w-screen mt-24`}>
+    <section className={`w-screen mt-36 mb-36`}>
       <Composition />
       <Compositions />
     </section>
