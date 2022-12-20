@@ -17,7 +17,7 @@ function BrandAmbassador() {
         />
       </figure>
       <div
-        className={`col-start-2 col-span-1 row-start-1 row-span-1 grid grid-cols-1 grid-rows-3`}
+        className={`col-start-2 col-span-1 row-start-1 row-span-1 grid grid-cols-1 grid-rows-[auto_min-content_auto]`}
       >
         <div
           className={`self-end col-start-1 col-span-1 row-start-1 row-span-1`}

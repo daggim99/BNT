@@ -14,7 +14,9 @@ const stats = [
 
 function Stat() {
   return (
-    <section className={`justify-center grid grid-cols-3 grid-rows-1`}>
+    <section
+      className={`w-[80vw] mx-auto justify-center grid grid-cols-3 grid-rows-1`}
+    >
       {stats.map((stat) => {
         return (
           <div

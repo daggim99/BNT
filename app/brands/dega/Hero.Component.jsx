@@ -27,9 +27,7 @@ function DegaHero() {
       <div
         className={`col-start-1 col-span-1 row-start-2 row-span-1 justify-self-center self-start md:w-[571.4px] md:h-[351px] grid grid-cols-1 grid-rows-[min-content_min-content_min_content_min-content]`}
       >
-        <div
-          className={`row-start-1 row-span-1 justify-self-center self-start`}
-        >
+        <div className={` row-start-1 row-span-1 justify-self-center self-end`}>
           <h1
             className={`uppercase text-white text-[110px] text-center font-oswald-n700 font-bold`}
           >

@@ -7,7 +7,7 @@ function Quench() {
     >
       <div className={`row-start-1 row-span-1 justify-self-center self-center`}>
         <h1
-          className={`text-center text-[85px] text-black font-roboto-n900 font-bold`}
+          className={`text-center text-[81px] text-black font-roboto-n900 font-bold`}
         >
           Quench you’re thirst
         </h1>

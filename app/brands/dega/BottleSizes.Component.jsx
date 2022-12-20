@@ -3,10 +3,10 @@ import Image from 'next/image'
 function BottleSizes() {
   return (
     <article
-      className={`h-full col-start-2 col-span-1 row-start-1 row-span-1 grid grid-cols-4 grid-rows-1`}
+      className={`h-[849px] w-[809px] col-start-2 col-span-1 row-start-1 row-span-1 grid grid-cols-4 grid-rows-1`}
     >
       <figure
-        className={`justify-self-center self-center w-[102px] h-[349px] col-start-1 col-span-1 row-start-1 row-span-1`}
+        className={`justify-self-end self-center w-[102px] h-[349px] col-start-1 col-span-1 row-start-1 row-span-1`}
       >
         <Image
           width={100}

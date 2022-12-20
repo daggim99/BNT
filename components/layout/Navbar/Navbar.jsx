@@ -76,13 +76,14 @@ export default function Navbar(index) {
                     {navigation.map((item, inx) =>
                       item.top ? (
                         <Menu
+                          key={item.id}
                           as="div"
                           className="relative inline-block text-left"
                         >
                           <div>
                             <Menu.Button
                               onClick={(e) => handleNavigation(2)}
-                              className={`inline-flex w-full justify-center bg-transparent text-sm font-roboto-n500 font-bold text-black shadow-sm hover:cursor-pointer hover:text-amber-500 ${
+                              className={`inline-flex w-full justify-center bg-transparent  text-sm font-roboto-n500 font-bold text-black shadow-sm hover:cursor-pointer hover:text-amber-500 ${
                                 (item.current
                                   ? 'font-roboto border-b-[1px] pb-1 border-amber-500 text-center self-center'
                                   : 'text-black h-full justify-self-center self-center hover:text-amber-500',
@@ -106,7 +107,7 @@ export default function Navbar(index) {
                             leaveFrom="transform opacity-100 scale-100"
                             leaveTo="transform opacity-0 scale-95"
                           >
-                            <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-transparent shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-800 bg-opacity-40 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                               <div className="">
                                 <Menu.Item>
                                   {({ active }) => (
@@ -116,7 +117,7 @@ export default function Navbar(index) {
                                         active
                                           ? 'bg-sky-200 text-sky-900'
                                           : 'text-sky-500',
-                                        'block px-4 py-2 text-sm',
+                                        'block px-4 py-2 text-sm font-bold',
                                       )}
                                     >
                                       Dega Water
@@ -131,7 +132,7 @@ export default function Navbar(index) {
                                         active
                                           ? 'bg-amber-200 text-amber-900'
                                           : 'text-amber-700',
-                                        'block px-4 py-2 text-sm',
+                                        'block px-4 py-2 text-sm font-bold',
                                       )}
                                     >
                                       Freshco

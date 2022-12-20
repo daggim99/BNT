@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const desc1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+const desc1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 const desc2 = 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 
 const benefits = [
@@ -69,50 +69,32 @@ const benefits = [
 const Benefits = () => {
   return (
     <article
-      className={`w-screen justify-items-stretch grid grid-cols-[auto_150px_150px_auto] grid-rows-3 gap-x-14`}
+      className={`w-screen justify-items-stretch grid grid-cols-[auto_min-content_min-content_auto] grid-rows-3 gap-x-14`}
     >
       {benefits.map((benefit) => {
         return (
           <div
             key={benefit.id}
-            className={`col-start-${benefit.col} col-span-1 row-start-${
-              benefit.row
-            } grid ${
-              benefit.left
-                ? 'grid-cols-[400px_120px]'
-                : 'grid-cols-[120px_400px]'
-            } grid-rows-1 gap-x-2`}
+            className={`col-start-${benefit.col} col-span-1 row-start-${benefit.row} grid grid-cols-1 grid-rows-2 gap-y-2`}
           >
             <div
-              className={`self-center ${
-                benefit.left
-                  ? 'lg:w-[332px] justify-self-end text-right'
-                  : 'lg:w-[330px] justify-self-start'
-              } row-start-1 row-span-1 ${
-                benefit.left
-                  ? 'col-start-1 col-span-1'
-                  : 'col-start-2 col-span-1'
-              }`}
+              className={`justify-self-center self-start lg:w-[400px] row-start-2 row-span-1`}
             >
               <p
-                className={`text-[28px] text-[#464646] font-roboto leading-[32.81px]`}
+                className={`text-[28px] text-[#464646] text-center font-roboto leading-[32.81px]`}
               >
                 {benefit.description}
               </p>
             </div>
             <figure
-              className={`self-center row-start-1 row-span-1 ${
-                benefit.left
-                  ? 'col-start-2 col-span-1'
-                  : 'col-start-1 col-span-1 '
-              }`}
+              className={`justify-self-center self-end row-start-1 row-span-1`}
             >
               <Image
                 width={100}
                 height={100}
                 src={benefit.icon}
                 alt={benefit.alt}
-                className={`object-contain`}
+                className={`object-cover object-center w-full h-full`}
               />
             </figure>
           </div>

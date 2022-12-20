@@ -5,7 +5,7 @@ function Composition() {
     <article className={`grid grid-cols-1 grid-rows-2`}>
       <div className={`justify-self-center self-center row-start-1 row-span-1`}>
         <h1
-          className={`text-[92px] text-black text-center font-roboto-n900 font-bold`}
+          className={`text-[81px] text-black text-center font-roboto-n900 font-bold`}
         >
           Composition
         </h1>

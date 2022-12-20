@@ -1,6 +1,6 @@
 const Benefit = () => {
   return (
-    <article className={`mb-36 grid grid-cols-1 grid-rows-2`}>
+    <article className={`mb-12 grid grid-cols-1 grid-rows-2`}>
       <div className={`row-start-1 row-span-1`}>
         <h1
           className={`text-black text-[64px] text-center font-roboto-n900 font-bold`}

@@ -10,7 +10,7 @@ const style = {
 
 const QuenchSection = () => {
   return (
-    <section style={style} className={`w-screen`}>
+    <section style={style} className={`w-screen mb-36`}>
       <Quench />
       <Slider />
     </section>
