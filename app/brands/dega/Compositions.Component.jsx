@@ -136,8 +136,9 @@ function Compositions() {
 
   const [isHovering, setIsHovering] = useState(false)
 
-  const handleMouseOver = () => {
+  const handleMouseOver = (index) => {
     setIsHovering(true)
+    setDetail(elements[index])
   }
 
   const handleMouseOut = () => {
@@ -146,15 +147,15 @@ function Compositions() {
 
   return (
     <article className={`grid grid-cols-3 grid-rows-5 gap-y-12`}>
-      {elements.map((element) => {
+      {elements.map((element, index) => {
         const w = element.width
         return (
           <div
             key={element.id}
-            onMouseOver={handleMouseOver}
+            onMouseOver={(e) => handleMouseOver(index)}
             onMouseOut={handleMouseOut}
             style={{ width: element.width }}
-            className={`lg:h-[130.05px] bg-[#EEF5F8] ${
+            className={`z-[5000] lg:h-[130.05px] bg-[#EEF5F8] transition-d hover:bg-[#BBECFC] hover:scale-105 ${
               element.left ? 'rounded-r-full' : 'rounded-l-full'
             } ${
               element.left ? 'justify-self-start' : 'justify-self-end'
@@ -197,25 +198,49 @@ function Compositions() {
           </div>
         )
       })}
-
       <div
         style={style}
         className={`justify-self-start col-start-2 col-span-1 row-start-1 row-span-full w-full h-full`}
       />
-      <figure
-        className={`justify-self-center col-start-2 col-span-1 row-start-1 row-span-full lg:w-[400px] h-[923px]`}
-      >
-        <Image
-          width={100}
-          height={100}
-          src={`/images/Brand/Dega/degaWaterBottle.png`}
-          alt={`Dega Water Bottle`}
-          className={`w-full h-full object-center overflow-visible object-contain`}
-        />
-      </figure>
+      {isHovering ? (
+        <>
+          <div
+            className={`h-[923px] w-[500px] z-[4900] self-center justify-self-center col-start-2 col-span-1 row-start-1 row-span-full bg-slate-50 opacity-60`}
+          >
+            <figure
+              className={` lg:w-[80%] h-[90%] mx-auto justify-self-center grid`}
+            >
+              <Image
+                width={100}
+                height={100}
+                src={`/images/Brand/Dega/degaWaterBottle.png`}
+                alt={`Dega Water Bottle`}
+                className={`w-[90%] h-[90%] mx-auto object-center overflow-visible object-contain`}
+              />
+            </figure>
+          </div>
+          <CompositionDetail
+            title={detail.name}
+            detail={detail.detail}
+            symbol={detail.symbol}
+          />
+        </>
+      ) : (
+        <figure
+          className={`justify-self-center col-start-2 col-span-1 row-start-1 row-span-full lg:w-[400px] h-[923px]`}
+        >
+          <Image
+            width={100}
+            height={100}
+            src={`/images/Brand/Dega/degaWaterBottle.png`}
+            alt={`Dega Water Bottle`}
+            className={`w-full h-full object-center overflow-visible object-contain`}
+          />
+        </figure>
+      )}
+      )
     </article>
   )
 }
 
 export default Compositions
-// {isHovering ? <CompositionDetail /> : null}

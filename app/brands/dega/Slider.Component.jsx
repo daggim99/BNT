@@ -24,7 +24,7 @@ function Slider() {
           slideShadows: true,
         }}
         // pagination={true}
-        className=""
+        className="overflow-visible"
       >
         <SwiperSlide>
           <Image
