@@ -14,10 +14,12 @@
 
 .swiper-button-prev {
   background-image: url('/images/Brand/Dega/Slides/Arrows/LeftArrow.png');
+  margin-left: 100px;
 }
 
 .swiper-button-next {
   background-image: url('/images/Brand/Dega/Slides/Arrows/RightArrow.png');
+  margin-right: 100px;
 }
 
 .swiper-button-next,

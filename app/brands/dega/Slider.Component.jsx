@@ -7,7 +7,9 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper'
 
 function Slider() {
   return (
-    <section className={`w-[80vw] lg:w-[85vw] md:mx-auto h-[50vh]`}>
+    <section
+      className={`overflow-visible w-[80vw] lg:w-screen justify-self-center  h-[50vh]`}
+    >
       <Swiper
         modules={[EffectCoverflow, Pagination, Navigation]}
         effect={'coverflow'}
