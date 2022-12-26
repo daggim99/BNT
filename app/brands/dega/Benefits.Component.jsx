@@ -1,4 +1,8 @@
+'use client'
+
 import Image from 'next/image'
+
+import { motion } from 'framer-motion'
 
 const desc1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 const desc2 = 'Lorem ipsum dolor sit amet, consectetur adipiscing'
@@ -68,12 +72,34 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <article
+    <motion.article
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        type: 'spring',
+        bounce: 0.4,
+      }}
       className={`w-screen justify-items-stretch grid grid-cols-[auto_min-content_min-content_auto] grid-rows-3 gap-x-14`}
     >
       {benefits.map((benefit) => {
         return (
-          <div
+          <motion.div
+            initial={
+              benefit.left
+                ? { opacity: 0, scale: 1, x: '-50vw' }
+                : { opacity: 0, scale: 1, x: '50vw' }
+            }
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.9,
+              delay: 0.4,
+              type: 'spring',
+              bounce: 0.4,
+            }}
             key={benefit.id}
             className={`col-start-${benefit.col} col-span-1 row-start-${benefit.row} grid grid-cols-1 grid-rows-2 gap-y-2`}
           >
@@ -97,13 +123,22 @@ const Benefits = () => {
                 className={`object-cover object-center w-full h-full`}
               />
             </figure>
-          </div>
+          </motion.div>
         )
       })}
       <div
         className={`-z-[5009] col-start-1 col-span-2 row-span-full bg-gradient-to-t from-[#D8F2F5] to-white`}
       ></div>
-      <figure
+      <motion.figure
+        initial={{ opacity: 0, scale: 0.75 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.9,
+          delay: 0.5,
+          type: 'spring',
+          bounce: 0.4,
+        }}
         className={`justify-self-right w-[266px] h-[938px] overflow-visible col-start-2 col-span-2 row-span-full`}
       >
         <Image
@@ -113,8 +148,8 @@ const Benefits = () => {
           alt="Dega Water Bottle"
           className={`w-full h-full object-center overflow-visible object-cover`}
         />
-      </figure>
-    </article>
+      </motion.figure>
+    </motion.article>
   )
 }
 

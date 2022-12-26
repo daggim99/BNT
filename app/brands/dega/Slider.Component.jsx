@@ -5,9 +5,20 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper'
 
+import { motion } from 'framer-motion'
+
 function Slider() {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        type: 'spring',
+        bounce: 0.4,
+      }}
       className={`overflow-visible w-[80vw] lg:w-screen justify-self-center  h-[50vh]`}
     >
       <Swiper
@@ -56,7 +67,7 @@ function Slider() {
           />
         </SwiperSlide>
       </Swiper>
-    </section>
+    </motion.section>
   )
 }
 

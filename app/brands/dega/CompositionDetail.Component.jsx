@@ -1,11 +1,33 @@
+'use client'
+
 import React from 'react'
+
+import { motion } from 'framer-motion'
 
 function CompositionDetail(props) {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        type: 'spring',
+        bounce: 0.4,
+      }}
       className={`z-[5009] opacity-100 col-start-2 col-span-1 row-start-2 row-span-3 justify-self-center self-center w-[658px] h-[325px] bg-[#EEF5F8] rounded-[61px] grid grid-cols-1 grid-rows-[min-content_min-content]`}
     >
-      <div
+      <motion.div
+        initial={{ opacity: 0, scale: 1, x: '-14vw' }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.9,
+          delay: 0.4,
+          type: 'spring',
+          bounce: 0.4,
+        }}
         className={`col-start-1 col-span-1 row-start-1 row-span-1 justify-self-start self-end`}
       >
         <h1
@@ -13,8 +35,17 @@ function CompositionDetail(props) {
         >
           {props.title} {'('} {props.symbol} {')'}
         </h1>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 1, x: '-14vw' }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.9,
+          delay: 0.5,
+          type: 'spring',
+          bounce: 0.4,
+        }}
         className={`w-[635px] col-start-1 col-span-1 row-start-2 row-span-1 justify-self-start self-start`}
       >
         <p
@@ -22,8 +53,8 @@ function CompositionDetail(props) {
         >
           {props.detail}
         </p>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 

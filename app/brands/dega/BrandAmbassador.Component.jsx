@@ -1,11 +1,35 @@
+'use client'
+
 import React from 'react'
 
 import Image from 'next/image'
 
+import { motion } from 'framer-motion'
+
 function BrandAmbassador() {
   return (
-    <section className={`grid grid-cols-2 grid-rows-1 gap-x-36`}>
-      <figure
+    <motion.section
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        type: 'spring',
+        bounce: 0.4,
+      }}
+      className={`grid grid-cols-2 grid-rows-1 gap-x-36`}
+    >
+      <motion.figure
+        initial={{ opacity: 0, scale: 1, x: '-14vw' }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.9,
+          delay: 0.5,
+          type: 'spring',
+          bounce: 0.4,
+        }}
         className={`justify-self-end col-start-1 col-span-1 row-start-1 row-span-1 lg:w-[419px] lg:h-[419px]`}
       >
         <Image
@@ -15,11 +39,29 @@ function BrandAmbassador() {
           alt={`Derartu Tulu`}
           className={`w-full h-full object-center object-contain`}
         />
-      </figure>
-      <div
+      </motion.figure>
+      <motion.div
+        initial={{ opacity: 0, scale: 1, x: '14vw' }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.9,
+          delay: 0.6,
+          type: 'spring',
+          bounce: 0.4,
+        }}
         className={`col-start-2 col-span-1 row-start-1 row-span-1 grid grid-cols-1 grid-rows-[auto_min-content_auto]`}
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0, scale: 1, x: '-14vw' }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.9,
+            delay: 0.7,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`self-end col-start-1 col-span-1 row-start-1 row-span-1`}
         >
           <h1
@@ -27,8 +69,17 @@ function BrandAmbassador() {
           >
             Brand Ambassador
           </h1>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 1, x: '-14vw' }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.9,
+            delay: 0.8,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`self-center col-start-1 col-span-1 row-start-2 row-span-1`}
         >
           <h2
@@ -36,8 +87,17 @@ function BrandAmbassador() {
           >
             Derartu Tulu
           </h2>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 1, x: '-14vw' }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.9,
+            delay: 0.9,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           className={`w-[532px] col-start-1 col-span-1 row-start-3 row-span-1`}
         >
           <p
@@ -46,9 +106,9 @@ function BrandAmbassador() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
           </p>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   )
 }
 

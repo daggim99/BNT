@@ -1,8 +1,21 @@
+'use client'
+
 import React from 'react'
+
+import { motion } from 'framer-motion'
 
 function BottleSizeBackGroundVector() {
   return (
-    <svg
+    <motion.svg
+      initial={{ opacity: 0, scale: 0.6 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        type: 'spring',
+        bounce: 0.4,
+      }}
       // width="1920"
       height="850"
       viewBox="0 0 1920 654"
@@ -65,7 +78,7 @@ function BottleSizeBackGroundVector() {
           <stop offset="1" stopColor="#D8F2F5" stopOpacity="0" />
         </linearGradient>
       </defs>
-    </svg>
+    </motion.svg>
   )
 }
 

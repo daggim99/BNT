@@ -1,4 +1,8 @@
+'use client'
+
 import React from 'react'
+
+import { motion } from 'framer-motion'
 
 const stats = [
   { id: 's1', name: '100%', disc: 'number of distributors', col: 1, row: 1 },
@@ -14,16 +18,43 @@ const stats = [
 
 function Stat() {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.2,
+        type: 'spring',
+        bounce: 0.4,
+      }}
       className={`w-[80vw] mx-auto justify-center grid grid-cols-3 grid-rows-1`}
     >
       {stats.map((stat) => {
         return (
-          <div
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.9,
+              delay: 0.3,
+              type: 'spring',
+              bounce: 0.4,
+            }}
             key={stat.id}
             className={`justify-self-center col-start-${stat.col} col-span-1 row-start-${stat.row} row-span-1 grid grid-cols-1 grid-rows-2`}
           >
-            <div
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.9,
+                delay: 0.4,
+                type: 'spring',
+                bounce: 0.4,
+              }}
               className={`justify-self-center col-start-1 col-span-1 row-start-1 row-span-1`}
             >
               <h1
@@ -31,8 +62,17 @@ function Stat() {
               >
                 {stat.name}
               </h1>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.9,
+                delay: 0.5,
+                type: 'spring',
+                bounce: 0.4,
+              }}
               className={`justify-self-center w-[343px] col-start-1 col-span-1 row-start-2 row-span-1`}
             >
               <p
@@ -40,11 +80,11 @@ function Stat() {
               >
                 {stat.disc}
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         )
       })}
-    </section>
+    </motion.section>
   )
 }
 

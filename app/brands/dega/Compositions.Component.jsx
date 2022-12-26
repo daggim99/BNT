@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 import Image from 'next/image'
 
+import { motion } from 'framer-motion'
+
 import CompositionDetail from './CompositionDetail.Component'
 
 const elements = [
@@ -130,10 +132,6 @@ const style = {
 function Compositions() {
   const [detail, setDetail] = useState({})
 
-  const handleDetail = (index) => {
-    setDetail(elements[index])
-  }
-
   const [isHovering, setIsHovering] = useState(false)
 
   const handleMouseOver = (index) => {
@@ -146,7 +144,18 @@ function Compositions() {
   }
 
   return (
-    <article className={`grid grid-cols-3 grid-rows-5 gap-y-12`}>
+    <motion.article
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        type: 'spring',
+        bounce: 0.4,
+      }}
+      className={`grid grid-cols-3 grid-rows-5 gap-y-12`}
+    >
       {elements.map((element, index) => {
         const w = element.width
         return (
@@ -239,7 +248,7 @@ function Compositions() {
         </figure>
       )}
       )
-    </article>
+    </motion.article>
   )
 }
 
