@@ -72,7 +72,7 @@ export default function Navbar(index) {
                   </Link>
                 </figure>
                 <div className="hidden sm:block items-stretch justify-self-end self-center md:mr-14 lg:mr-20 ">
-                  <div className="grid grid-cols-[repeat(6,_min-content)] gap-x-12">
+                  <div className="grid grid-cols-[repeat(7,_min-content)] gap-x-12">
                     {navigation.map((item, inx) =>
                       item.top ? (
                         <Menu
