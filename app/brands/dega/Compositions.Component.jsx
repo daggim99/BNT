@@ -214,17 +214,17 @@ function Compositions() {
       {isHovering ? (
         <>
           <div
-            className={`h-[923px] w-[500px] z-[4900] self-center justify-self-center col-start-2 col-span-1 row-start-1 row-span-full bg-slate-50 opacity-60`}
+            className={`backdrop-filter backdrop-brightness-50 h-[923px] w-screen overflow-clip z-[4900] self-center justify-self-center col-start-2 col-span-1 row-start-1 row-span-full  bg-slate-50 opacity-60`}
           >
             <figure
-              className={` lg:w-[80%] h-[90%] mx-auto justify-self-center grid`}
+              className={` lg:w-[500px] h-[80%] mx-auto justify-self-center grid`}
             >
               <Image
                 width={100}
                 height={100}
-                src={`/images/Brand/Dega/degaWaterBottle.png`}
+                src={`/images/Brand/Dega/splash/degaWaterBottleWithSplash.png`}
                 alt={`Dega Water Bottle`}
-                className={`w-[90%] h-[90%] mx-auto object-center overflow-visible object-contain`}
+                className={`w-[90%] h-[95%] mx-auto object-center overflow-visible object-contain`}
               />
             </figure>
           </div>
@@ -236,12 +236,12 @@ function Compositions() {
         </>
       ) : (
         <figure
-          className={`justify-self-center col-start-2 col-span-1 row-start-1 row-span-full lg:w-[400px] h-[923px]`}
+          className={`justify-self-center col-start-2 col-span-1 row-start-1 row-span-full lg:w-[550px] h-[970px]`}
         >
           <Image
             width={100}
             height={100}
-            src={`/images/Brand/Dega/degaWaterBottle.png`}
+            src={`/images/Brand/Dega/splash/degaWaterBottleWithSplash.png`}
             alt={`Dega Water Bottle`}
             className={`w-full h-full object-center overflow-visible object-contain`}
           />

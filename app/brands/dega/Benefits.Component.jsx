@@ -82,26 +82,13 @@ const Benefits = () => {
         type: 'spring',
         bounce: 0.4,
       }}
-      className={`w-screen justify-items-stretch grid grid-cols-[auto_min-content_min-content_auto] grid-rows-3 gap-x-14`}
+      className={`z-[14000] w-screen justify-items-stretch grid grid-cols-[auto_min-content_min-content_auto] grid-rows-3 gap-x-14`}
     >
       {benefits.map((benefit) => {
         return (
-          <motion.div
-            initial={
-              benefit.left
-                ? { opacity: 0, scale: 1, x: '-50vw' }
-                : { opacity: 0, scale: 1, x: '50vw' }
-            }
-            whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.9,
-              delay: 0.4,
-              type: 'spring',
-              bounce: 0.4,
-            }}
+          <div
             key={benefit.id}
-            className={`col-start-${benefit.col} col-span-1 row-start-${benefit.row} grid grid-cols-1 grid-rows-2 gap-y-2`}
+            className={`z-[14000] col-start-${benefit.col} col-span-1 row-start-${benefit.row} grid grid-cols-1 grid-rows-2 gap-y-2`}
           >
             <div
               className={`justify-self-center self-start lg:w-[400px] row-start-2 row-span-1`}
@@ -123,7 +110,7 @@ const Benefits = () => {
                 className={`object-cover object-center w-full h-full`}
               />
             </figure>
-          </motion.div>
+          </div>
         )
       })}
       <div

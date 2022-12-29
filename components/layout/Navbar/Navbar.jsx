@@ -80,9 +80,9 @@ export default function Navbar(index) {
                           as="div"
                           className="relative inline-block text-left"
                         >
-                          <div>
+                          <div key={item.id}>
                             <Menu.Button
-                              onClick={(e) => handleNavigation(2)}
+                              onClick={(e) => handleNavigation(3)}
                               className={`inline-flex w-full justify-center bg-transparent  text-sm font-roboto-n500 font-bold text-black shadow-sm hover:cursor-pointer hover:text-amber-500 ${
                                 (item.current
                                   ? 'font-roboto border-b-[1px] pb-1 border-amber-500 text-center self-center'
@@ -146,7 +146,7 @@ export default function Navbar(index) {
                       ) : (
                         <Link
                           href={item.href}
-                          key={item.name}
+                          key={item.id}
                           onClick={(e) => handleNavigation(inx)}
                           className={classNames(
                             item.current
