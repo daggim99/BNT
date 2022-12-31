@@ -5,6 +5,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function SubsidiariesHero() {
+  const style = {
+    backgroundImage: `linear-gradient(to bottom, rgba(255, 241, 201, 1),  rgba(255, 236, 177, 0.9)), url('/images/About/hero-pattern-1n2.png')`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundClip: 'border',
+    backgroundOrigin: 'border',
+  }
   return (
     <section className="h-[65vh] grid grid-cols-[1fr_1fr] grid-rows-1">
       <div
