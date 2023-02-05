@@ -4,6 +4,7 @@ import { Fragment } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -17,6 +18,14 @@ function classNames(...classes) {
 }
 
 export default function Navbar(index) {
+  const pathName = usePathname()
+
+  const color = `${
+    pathName === '/brands/freshco'
+      ? 'bg-white bg-opacity-75 drop-shadow-lg shadow-lg py-3'
+      : 'bg-transparent top-[5%]'
+  }`
+
   const navigation = useSelector((state) => state.navigation)
   const dispatch = useDispatch()
 
@@ -29,8 +38,9 @@ export default function Navbar(index) {
 
   return (
     <Disclosure
+      key={navigation}
       as="nav"
-      className="z-50 absolute top-[5%] w-screen col-start-1 col-end-13 bg-transparent"
+      className={`z-[5000] absolute w-screen col-start-1 col-end-13 ${color}`}
     >
       {({ open }) => (
         <>
@@ -127,7 +137,7 @@ export default function Navbar(index) {
                                 <Menu.Item>
                                   {({ active }) => (
                                     <a
-                                      href="#"
+                                      href="/brands/freshco"
                                       className={classNames(
                                         active
                                           ? 'bg-amber-200 text-amber-900'
@@ -170,7 +180,7 @@ export default function Navbar(index) {
             <div className="space-y-1 px-2 pt-2 pb-3 text-white">
               <div>
                 {navigation.map((item, inx) => (
-                  <Link key={item.name} href={item.href}>
+                  <Link key={item.id} href={item.href}>
                     <Disclosure.Button
                       as="a"
                       onClick={(e) => handleNavigation(inx)}

@@ -7,11 +7,24 @@ import { usePathname } from 'next/navigation'
 const Logo = ({ className }) => {
   const pathName = usePathname()
 
-  const color = `${
-    pathName === '/brands/dega' ? 'bg-transparent' : 'bg-[#4A171E]'
-  }`
+  // const color = `${
+  //   pathName === '/brands/dega' ? 'bg-transparent' : 'bg-[#4A171E]'
+  // }`
 
   // const Logo = `${pathName === '/brands/dega' ? DegaLogoImage : LogoImage}`
+
+  let logo = ''
+  let color = ''
+
+  if (pathName === '/brands/dega')
+    logo = '/images/Brand/Dega/footerDegaLogo.png'
+  else if (pathName === '/brands/freshco')
+    logo = '/images/Brand/Freshco/Logo/FooterFreshCoLogo.png'
+  else logo = 'bg-[#4A171E]'
+
+  if (pathName === '/brands/dega') color = 'bg-transparent'
+  else if (pathName === '/brands/freshco') color = 'bg-transparent'
+  else color = '/images/Logo/FooterLogo.png'
 
   return (
     <figure
@@ -20,11 +33,7 @@ const Logo = ({ className }) => {
       <Image
         width={100}
         height={100}
-        src={
-          pathName === '/brands/dega'
-            ? '/images/Brand/Dega/footerDegaLogo.png'
-            : '/images/Logo/FooterLogo.png'
-        }
+        src={logo}
         alt="Footer Logo Image"
         className="w-full h-full block object-contain justify-self-start self-stretch"
       />

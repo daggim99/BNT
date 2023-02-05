@@ -99,6 +99,8 @@ module.exports = {
         'oswald-n500': ['Oswald n500', 'sans-serif'],
         'oswald-n600': ['Oswald n600', 'sans-serif'],
         'oswald-n700': ['Oswald n700', 'sans-serif'],
+
+        great_vibes: ['Great Vibes', 'sans-serif'],
       },
     },
   },

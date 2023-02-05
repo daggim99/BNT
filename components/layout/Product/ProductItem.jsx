@@ -154,7 +154,7 @@ const ProductItem = () => {
           >
             <Button
               to={2}
-              link={`${left ? '#' : '/brands/dega'}`}
+              link={`${left ? '/brands/freshco' : '/brands/dega'}`}
               className={`capitalize px-6 py-2 border-[3px] lg:w-[195px] lg:h-[57px] ${
                 left ? 'border-[#00D1FF]' : 'border-[#FFC107]'
               } bg-transparent  text-white text-base md:text-[16px] lg:text-[25px] text-center font-roboto-n500`}
