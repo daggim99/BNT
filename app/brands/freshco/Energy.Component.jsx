@@ -4,7 +4,7 @@ import Slider from './Slider.Component'
 
 function Energy() {
   return (
-    <section className={`h-[900px] grid grid-cols-[1fr_1fr] grid-rows-1`}>
+    <section className={`my-16 h-[900px] grid grid-cols-[1fr_1fr] grid-rows-1`}>
       <div
         className={`w-[60%] m-auto justify-self-center  col-start-1 col-span-1 row-start-1 row-span-full grid grid-cols-1 grid-rows-2`}
       >
