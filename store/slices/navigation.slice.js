@@ -11,6 +11,7 @@ const initialState = [
     index: 1,
     top: false,
     foot: true,
+    blog: false,
   },
   {
     name: 'Business',
@@ -19,6 +20,7 @@ const initialState = [
     index: 2,
     top: false,
     foot: false,
+    blog: false,
   },
   {
     name: 'Brands',
@@ -27,6 +29,7 @@ const initialState = [
     index: 3,
     top: true,
     foot: false,
+    blog: false,
   },
   {
     name: 'Subsidiaries',
@@ -35,22 +38,25 @@ const initialState = [
     index: 4,
     top: false,
     foot: false,
+    blog: false,
   },
   {
     name: 'Blog',
     href: '/blog',
     current: false,
     index: 5,
-    top: false,
+    top: true,
     foot: true,
+    blog: true,
   },
   {
     name: 'ContactUs',
     href: '/contact',
     current: false,
-    index: 7,
+    index: 6,
     top: false,
     foot: true,
+    blog: false,
   },
 ]
 

@@ -46,16 +46,16 @@ function Maps() {
         return (
           <React.Fragment key={location.id}>
             <iframe
-              key={location.id}
+              key={location.name}
               loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
+              allowFullscreen
+              referrerPolicy="no-referrer-when-downgrade"
               src={location.location}
               className={`hover:z-50 col-start-1 col-span-1 row-start-${location.row} row-span-1 drop-shadow-sm w-full h-[330px]`}
             />
             {location.name ? (
               <div
-                key={location.id}
+                key={location.row}
                 className={`col-start-1 col-span-full row-start-${location.row} row-span-1 bg-[#6A6262] opacity-50 grid grid-cols-1 grid-rows-1 transition-d hover:opacity-0 hover:-z-50 focus:opacity-0 focus:-z-50 hover:hidden focus:hidden`}
               >
                 <p

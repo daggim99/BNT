@@ -41,7 +41,7 @@ const FooterNav = () => {
           ) : (
             <Link
               href={href}
-              key={name}
+              key={index}
               onClick={(e) => handleActiveLink(index)}
               className={`text-xs sm:text-sm md:text-base ${
                 current ? `font-roboto ${text}` : ``

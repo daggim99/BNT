@@ -165,8 +165,8 @@ function Maps() {
               <iframe
                 key={location.id}
                 loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
+                allowFullscreen
+                referrerPolicy="no-referrer-when-downgrade"
                 src={location.location}
                 className={`w-full h-full`}
               />
