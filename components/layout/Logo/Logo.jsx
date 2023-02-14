@@ -20,11 +20,11 @@ const Logo = ({ className }) => {
     logo = '/images/Brand/Dega/footerDegaLogo.png'
   else if (pathName === '/brands/freshco')
     logo = '/images/Brand/Freshco/Logo/FooterFreshCoLogo.png'
-  else logo = 'bg-[#4A171E]'
+  else logo = '/images/Logo/FooterLogo.png'
 
   if (pathName === '/brands/dega') color = 'bg-transparent'
   else if (pathName === '/brands/freshco') color = 'bg-transparent'
-  else color = '/images/Logo/FooterLogo.png'
+  else color = 'bg-[#4A171E]'
 
   return (
     <figure
