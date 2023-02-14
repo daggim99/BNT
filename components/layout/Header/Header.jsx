@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   const backgroundImage = {
-    backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.5), rgb(28, 10, 0, 0.5)), url('/images/home/scroll-1${scroll}.jpg')`,
+    backgroundImage: `linear-gradient(rgb(28, 10, 0, 0.5), rgb(28, 10, 0, 0.5)), url('/images/home/scroll-2${scroll}.jpg')`,
   }
 
   return (
