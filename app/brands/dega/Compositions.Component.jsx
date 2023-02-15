@@ -222,7 +222,7 @@ function Compositions() {
               <Image
                 width={100}
                 height={100}
-                src={`/images/Brand/Dega/splash/degaWaterBottleWithSplash.png`}
+                src={`/images/Brand/Dega/Splash/degaWaterBottleWithSplash.png`}
                 alt={`Dega Water Bottle`}
                 className={`w-[90%] h-[95%] mx-auto object-center overflow-visible object-contain`}
               />
@@ -241,7 +241,7 @@ function Compositions() {
           <Image
             width={100}
             height={100}
-            src={`/images/Brand/Dega/splash/degaWaterBottleWithSplash.png`}
+            src={`/images/Brand/Dega/Splash/degaWaterBottleWithSplash.png`}
             alt={`Dega Water Bottle`}
             className={`w-full h-full object-center overflow-visible object-contain`}
           />
