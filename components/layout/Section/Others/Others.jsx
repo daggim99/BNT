@@ -3,6 +3,11 @@ import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Autoplay } from 'swiper'
+
+SwiperCore.use([Autoplay])
+
 export const businesses = [
   {
     id: 'b1',
@@ -85,23 +90,28 @@ export const Others = () => {
   }, [inView, animation])
 
   return (
-    <ul
-      ref={ref}
-      className="dark:bg-white h-[36vh] md:h-[24vh] lg:h-[16vh] overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-0"
+    <Swiper
+      loop={true}
+      slidesPerView={7}
+      autoplay={{ delay: 500 }}
+      speed={1000}
+      grabCursor={true}
+      mousewheelControl={true}
+      keyboardControl={true}
+      className="dark:bg-white h-[36vh] md:h-[24vh] lg:h-[16vh] content-center justify-center items-center overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-0"
     >
       {businesses.map((business) => {
-        const { id, title, colStart, colEnd } = business
+        const { id, title } = business
         return (
-          <motion.li
-            animate={animation}
+          <SwiperSlide
             key={id}
-            className={`transition-d lg:col-start-${colStart} lg:col-end-${colEnd} text-center align-middle justify-self-center p-1 self-center font-roboto-n500 text-[12px] sm:text-[12px] md:text-[16px] text-[#636363] font-bold px-0  hover:scale-95 hover:text-base hover:bg-slate-50`}
+            className={`pt-[25%] transition-d text-center align-middle justify-self-center p-1 self-center font-roboto-n500 text-[12px] sm:text-[12px] md:text-[16px] text-[#636363] font-bold px-0  hover:scale-95 hover:text-base hover:bg-slate-50`}
           >
             {title}
-          </motion.li>
+          </SwiperSlide>
         )
       })}
-    </ul>
+    </Swiper>
   )
 }
 

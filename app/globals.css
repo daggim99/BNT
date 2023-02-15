@@ -37,3 +37,7 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}

@@ -90,7 +90,7 @@ export default function Navbar(index) {
                   </Link>
                   <Link
                     href="/"
-                    onClick={(e) => handleActiveLink(0)}
+                    onClick={(e) => handleNavigation(0)}
                     className="hidden lg:block justify-self-center"
                   >
                     <Image
