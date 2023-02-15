@@ -33,7 +33,7 @@ function BottleSizes() {
         <Image
           width={100}
           height={100}
-          src={`/images/Brand/Dega/degaWaterBottle.png`}
+          src={`/images/Brand/Dega/degaGroupBottle.png`}
           alt={`Dega Water Bottles`}
           className={`w-full h-full object-center object-contain`}
         />
