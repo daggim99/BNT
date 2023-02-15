@@ -1,6 +1,10 @@
+'use client'
+
 import React from 'react'
 
 import Image from 'next/image'
+
+import { motion } from 'framer-motion'
 
 const leftBenefit = [
   {
@@ -50,7 +54,16 @@ function LeftBenefit() {
               key={benefit.id}
               className={`self-center grid grid-cols-[min-content_min-content] gap-x-16`}
             >
-              <figure
+              <motion.figure
+                initial={{ opacity: 0, scale: 0.9, x: 120 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.9,
+                  delay: 0.6,
+                  type: 'spring',
+                  bounce: 0.4,
+                }}
                 className={`w-[103px] h-[103px] justify-self-center self-center`}
               >
                 <Image
@@ -60,13 +73,24 @@ function LeftBenefit() {
                   src={benefit.image}
                   className={`object-contain object-center w-full h-full`}
                 />
-              </figure>
+              </motion.figure>
               <div
                 className={`col-start-2 w-[310px] col-span-1 row-start-1 row-span-1 justify-self-center self-center`}
               >
-                <h1 className={`text-[28px] text-white font-lato`}>
+                <motion.h1
+                  initial={{ opacity: 0, scale: 0.9, x: 120 }}
+                  whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.5,
+                    type: 'spring',
+                    bounce: 0.4,
+                  }}
+                  className={`text-[28px] text-white font-lato`}
+                >
                   {benefit.title}
-                </h1>
+                </motion.h1>
               </div>
             </div>
           )

@@ -42,7 +42,7 @@ export default function Navbar(index) {
 
   const color = `${
     pathName === '/brands/freshco'
-      ? 'bg-white bg-opacity-75 drop-shadow-lg shadow-lg py-3'
+      ? 'bg-white bg-opacity-75 drop-shadow-lg shadow-lg py-3 pt-12'
       : 'bg-transparent top-[5%]'
   }`
 
@@ -91,7 +91,7 @@ export default function Navbar(index) {
                   <Link
                     href="/"
                     onClick={(e) => handleNavigation(0)}
-                    className="hidden lg:block justify-self-center"
+                    className="mt-[20px] hidden lg:block justify-self-center"
                   >
                     <Image
                       width="100"
@@ -102,7 +102,7 @@ export default function Navbar(index) {
                   </Link>
                 </figure>
                 <div className="hidden sm:block items-stretch justify-self-end self-center md:mr-14 lg:mr-20 ">
-                  <div className="grid grid-cols-[repeat(7,_104px)] grid-rows-[min-content_31px_31px_31px] gap-y-[0.15rem] gap-x-12">
+                  <div className="mt-[39px] grid grid-cols-[repeat(7,_104px)] grid-rows-[min-content_31px_31px_31px] gap-y-[0.15rem] gap-x-6">
                     {navigation.map((item, inx) =>
                       item.top ? (
                         item.blog ? (

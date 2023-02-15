@@ -1,4 +1,8 @@
+'use client'
+
 import React from 'react'
+
+import { motion } from 'framer-motion'
 
 const rightBenefits = [
   {
@@ -44,9 +48,20 @@ function RightBenefit() {
         <div
           className={`self-end col-start-1 col-span-1 row-start-1 row-span-1`}
         >
-          <h2 className={`text-[64px] text-black font-lato-i700 italic`}>
+          <motion.h2
+            initial={{ opacity: 0, scale: 0.9, x: -120 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.9,
+              delay: 0.4,
+              type: 'spring',
+              bounce: 0.4,
+            }}
+            className={`text-[64px] text-black font-lato-i700 italic`}
+          >
             Benefits of freshco
-          </h2>
+          </motion.h2>
         </div>
         <div
           className={`col-start-1 col-span-1 row-start-2 row-span-1 grid grid-cols-1 grid-rows-3 gap-y-6`}
@@ -60,11 +75,20 @@ function RightBenefit() {
                 <div
                   className={`col-start-1 col-span-1 row-start-1 row-span-1`}
                 >
-                  <h1
+                  <motion.h1
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.9,
+                      delay: 0.7,
+                      type: 'spring',
+                      bounce: 0.4,
+                    }}
                     className={`text-black text-[30px] font-lato-i900 font-bold uppercase`}
                   >
                     {benefit.title}
-                  </h1>
+                  </motion.h1>
                 </div>
                 <div
                   className={`ml-12 self-end col-start-1 col-span-1 row-start-2 row-span-1 grid grid-cols-1 grid-rows-3 gap-y-4`}
@@ -72,7 +96,16 @@ function RightBenefit() {
                   <div
                     className={`col-start-1 col-span-1 row-start-1 row-span-1 grid grid-cols-[min-content_min-content] gap-x-9`}
                   >
-                    <div
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.5,
+                        type: 'spring',
+                        bounce: 0.4,
+                      }}
                       className={`w-[33px] h-[33px] col-start-1 col-span-1 row-start-1 row-span-1`}
                     >
                       <svg
@@ -88,20 +121,40 @@ function RightBenefit() {
                           fill="#165424"
                         />
                       </svg>
-                    </div>
+                    </motion.div>
                     <div
                       className={`w-[200px] col-start-2 col-span-1 row-start-1 row-span-1`}
                     >
-                      <p className={`text-[28px] text-[#616161] font-lato`}>
+                      <motion.p
+                        initial={{ opacity: 0, scale: 0.9, x: -120 }}
+                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 0.9,
+                          delay: 0.6,
+                          type: 'spring',
+                          bounce: 0.4,
+                        }}
+                        className={`text-[28px] text-[#616161] font-lato`}
+                      >
                         {benefit.sub.sub1}
-                      </p>
+                      </motion.p>
                     </div>
                   </div>
 
                   <div
                     className={`col-start-1 col-span-1 row-start-2 row-span-1 grid grid-cols-[min-content_min-content] gap-x-9`}
                   >
-                    <div
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9, x: 120 }}
+                      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.7,
+                        type: 'spring',
+                        bounce: 0.4,
+                      }}
                       className={`col-start-1 col-span-1 row-start-1 row-span-1`}
                     >
                       <svg
@@ -117,20 +170,40 @@ function RightBenefit() {
                           fill="#165424"
                         />
                       </svg>
-                    </div>
+                    </motion.div>
                     <div
                       className={`w-[200px] col-start-2 col-span-1 row-start-1 row-span-1`}
                     >
-                      <p className={`text-[28px] text-[#616161] font-lato`}>
+                      <motion.p
+                        initial={{ opacity: 0, scale: 0.9, x: 120 }}
+                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 0.9,
+                          delay: 0.5,
+                          type: 'spring',
+                          bounce: 0.4,
+                        }}
+                        className={`text-[28px] text-[#616161] font-lato`}
+                      >
                         {benefit.sub.sub2}
-                      </p>
+                      </motion.p>
                     </div>
                   </div>
 
                   <div
                     className={`col-start-1 col-span-1 row-start-3 row-span-1 grid grid-cols-[min-content_min-content] gap-x-9`}
                   >
-                    <div
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.9,
+                        type: 'spring',
+                        bounce: 0.4,
+                      }}
                       className={`col-start-1 col-span-1 row-start-1 row-span-1`}
                     >
                       <svg
@@ -146,13 +219,24 @@ function RightBenefit() {
                           fill="#165424"
                         />
                       </svg>
-                    </div>
+                    </motion.div>
                     <div
                       className={`w-[200px] col-start-2 col-span-1 row-start-1 row-span-1`}
                     >
-                      <p className={`text-[28px] text-[#616161] font-lato`}>
+                      <motion.p
+                        initial={{ opacity: 0, scale: 0.9, x: -120 }}
+                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 0.9,
+                          delay: 0.4,
+                          type: 'spring',
+                          bounce: 0.4,
+                        }}
+                        className={`text-[28px] text-[#616161] font-lato`}
+                      >
                         {benefit.sub.sub3}
-                      </p>
+                      </motion.p>
                     </div>
                   </div>
                 </div>

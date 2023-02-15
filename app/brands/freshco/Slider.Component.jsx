@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 
+import { motion } from 'framer-motion'
+
 function Slider() {
   const [scroll, setScroll] = useState(0)
 
@@ -59,7 +61,16 @@ function Slider() {
       <div
         className={`justify-self-center self-center col-start-1 col-span-1 row-start-1 row-span-1 grid grid-cols-1 grid-row-[90px_790px_90px]`}
       >
-        <button
+        <motion.button
+          initial={{ opacity: 0, scale: 0.9, y: -52 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.9,
+            delay: 0.6,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           onClick={handleScrollUp}
           className={`col-start-1 justify-self-center col-span-full row-start-1 row-span-1`}
         >
@@ -75,26 +86,62 @@ function Slider() {
               fill="#474646"
             />
           </svg>
-        </button>
+        </motion.button>
         <div
           className={`col-start-1 col-span-full row-start-2 row-span-1 grid grid-cols-1 grid-rows-[200px_390px_200px]`}
         >
-          <figure
+          <motion.figure
+            initial={{ opacity: 0, scale: 0.9, x: -52 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.9,
+              delay: 0.4,
+              type: 'spring',
+              bounce: 0.4,
+            }}
             style={backgroundImage2}
             className={`w-[571px] h-full col-start-1 col-span-1 row-start-1 row-span-1`}
-          ></figure>
+          ></motion.figure>
 
-          <figure
+          <motion.figure
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.9,
+              delay: 0.3,
+              type: 'spring',
+              bounce: 0.4,
+            }}
             style={backgroundImage}
             className={`w-[571px] h-full col-start-1 col-span-1 row-start-2 row-span-1  rounded-md overflow-hidden`}
-          ></figure>
+          ></motion.figure>
 
-          <figure
+          <motion.figure
+            initial={{ opacity: 0, scale: 0.9, x: 52 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.9,
+              delay: 0.5,
+              type: 'spring',
+              bounce: 0.4,
+            }}
             style={backgroundImage3}
             className={`w-[571px] h-full col-start-1 col-span-1 row-start-3 row-span-1 rounded-md`}
-          ></figure>
+          ></motion.figure>
         </div>
-        <button
+        <motion.button
+          initial={{ opacity: 0, scale: 0.9, y: 52 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.9,
+            delay: 0.6,
+            type: 'spring',
+            bounce: 0.4,
+          }}
           onClick={handleScrollDown}
           className={`col-start-1 col-span-full justify-self-center row-start-3 row-span-1`}
         >
@@ -110,7 +157,7 @@ function Slider() {
               fill="#474646"
             />
           </svg>
-        </button>
+        </motion.button>
       </div>
     </article>
   )
