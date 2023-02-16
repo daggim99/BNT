@@ -2,6 +2,8 @@
 
 import React from 'react'
 
+import Link from 'next/link'
+
 import { motion } from 'framer-motion'
 
 function NavHover(props) {
@@ -21,11 +23,12 @@ function NavHover(props) {
       className={`w-[104px] h-[31px] grid bg-white ${props.className}`}
     >
       <div className={`justify-self-center self-center grid`}>
-        <h
+        <Link
+          href={props.navigate}
           className={`text-center justify-self-center self-center text-[20px] text-black italic font-roboto-n500 ${props.className}`}
         >
           {props.title}
-        </h>
+        </Link>
       </div>
     </motion.article>
   )

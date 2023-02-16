@@ -36,6 +36,7 @@ export default function Navbar(index) {
 
   const handleMouseOut = () => {
     setIsHovering(false)
+    setIsBlogHovering(false)
   }
 
   const pathName = usePathname()
@@ -109,7 +110,7 @@ export default function Navbar(index) {
                           <Link
                             href={`/blog`}
                             onMouseOver={handleBlogMouseOver}
-                            onMouseOut={handleBlogMouseOut}
+                            // onMouseOut={handleBlogMouseOut}
                             key={item.id}
                             className={classNames(
                               item.current
@@ -128,7 +129,7 @@ export default function Navbar(index) {
                           >
                             <div
                               onMouseOver={handleMouseOver}
-                              onMouseOut={handleMouseOut}
+                              // onMouseOut={handleMouseOut}
                               key={item.id}
                             >
                               <Menu.Button
@@ -148,7 +149,7 @@ export default function Navbar(index) {
                               </Menu.Button>
                             </div>
 
-                            <Transition
+                            {/* <Transition
                               as={Fragment}
                               enter="transition ease-out duration-100"
                               enterFrom="transform opacity-0 scale-95"
@@ -156,8 +157,8 @@ export default function Navbar(index) {
                               leave="transition ease-in duration-75"
                               leaveFrom="transform opacity-100 scale-100"
                               leaveTo="transform opacity-0 scale-95"
-                            >
-                              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-800 bg-opacity-40 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            > */}
+                            {/* <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-800 bg-opacity-40 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                 <div className="">
                                   <Menu.Item>
                                     {({ active }) => (
@@ -190,8 +191,8 @@ export default function Navbar(index) {
                                     )}
                                   </Menu.Item>
                                 </div>
-                              </Menu.Items>
-                            </Transition>
+                              </Menu.Items> */}
+                            {/* </Transition> */}
                           </Menu>
                         )
                       ) : item.blog ? (
@@ -201,6 +202,7 @@ export default function Navbar(index) {
                           key={item.id}
                           href={item.href}
                           onClick={(e) => handleNavigation(inx)}
+                          onMouseOut={handleMouseOut}
                           className={classNames(
                             item.current
                               ? 'font-roboto text-amber-500 border-b-[1px] pb-1 border-amber-500 text-center self-center justify-self-center'
@@ -217,15 +219,17 @@ export default function Navbar(index) {
                       <>
                         <NavHover
                           title={`Dega`}
-                          className="rounded-t-md justify-self-center row-start-2 row-span-1 col-start-4 col-span-1"
+                          className="rounded-t-md justify-self-center row-start-2 row-span-1 col-start-4 col-span-1 transition-d hover:scale-95 hover:text-sky-600"
                           duration={0.5}
                           delay={0.2}
+                          navigate="/brands/dega"
                         />
                         <NavHover
                           title={`Fresco`}
-                          className="rounded-b-md justify-self-center row-start-3 row-span-1 col-start-4 col-span-1"
+                          className="rounded-b-md justify-self-center row-start-3 row-span-1 col-start-4 col-span-1 transition-d hover:scale-95 hover:text-amber-400"
                           duration={0.5}
                           delay={0.3}
+                          navigate="/brands/freshco"
                         />
                       </>
                     ) : (
@@ -236,21 +240,24 @@ export default function Navbar(index) {
                       <>
                         <NavHover
                           title={`News`}
-                          className="rounded-t-md justify-self-center row-start-2 row-span-1 col-start-6 col-span-1"
+                          className="rounded-t-md justify-self-center row-start-2 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
                           duration={0.5}
                           delay={0.2}
+                          navigate="/blog"
                         />
                         <NavHover
                           title={`Gallery`}
-                          className="rounded-none justify-self-center row-start-3 row-span-1 col-start-6 col-span-1"
+                          className="rounded-none justify-self-center row-start-3 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
                           duration={0.5}
                           delay={0.3}
+                          navigate="/blog"
                         />
                         <NavHover
                           title={`Blog`}
-                          className="rounded-b-md justify-self-center row-start-4 row-span-1 col-start-6 col-span-1"
+                          className="rounded-b-md justify-self-center row-start-4 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
                           duration={0.5}
                           delay={0.4}
+                          navigate="/blog"
                         />
                       </>
                     ) : (
