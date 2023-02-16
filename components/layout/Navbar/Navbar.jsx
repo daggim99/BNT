@@ -27,9 +27,6 @@ export default function Navbar(index) {
     setIsBlogHovering(true)
   }
 
-  const handleBlogMouseOut = () => {
-    setIsBlogHovering(false)
-  }
   const handleMouseOver = (index) => {
     setIsHovering(true)
   }

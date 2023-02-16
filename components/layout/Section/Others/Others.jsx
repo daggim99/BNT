@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 
+import { usePathname } from 'next/navigation'
+
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
 
@@ -59,6 +61,8 @@ const trans = { type: 'spring', bounce: 0.3, duration: 1.4 }
 const anim = { opacity: 1, scale: 1, x: 0, y: 0 }
 
 export const Others = () => {
+  const pathName = usePathname()
+
   const { ref, inView } = useInView()
   const animation = useAnimation()
 
@@ -89,15 +93,15 @@ export const Others = () => {
     }
   }, [inView, animation])
 
-  return (
+  return pathName === '/business' ? (
+    ''
+  ) : (
     <Swiper
       loop={true}
       slidesPerView={7}
       autoplay={{ delay: 500 }}
       speed={1000}
       grabCursor={true}
-      mousewheelControl={true}
-      keyboardControl={true}
       className="dark:bg-white h-[36vh] md:h-[24vh] lg:h-[16vh] content-center justify-center items-center overflow-hidden grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-7 lg:grid-rows-1 gap-0"
     >
       {businesses.map((business) => {
