@@ -110,7 +110,7 @@ export default function Navbar(index) {
                           <Link
                             href={`/blog`}
                             onMouseOver={handleBlogMouseOver}
-                            // onMouseOut={handleBlogMouseOut}
+                            // onMouseOut={handleMouseOut}
                             key={item.id}
                             className={classNames(
                               item.current
@@ -202,7 +202,6 @@ export default function Navbar(index) {
                           key={item.id}
                           href={item.href}
                           onClick={(e) => handleNavigation(inx)}
-                          onMouseOut={handleMouseOut}
                           className={classNames(
                             item.current
                               ? 'font-roboto text-amber-500 border-b-[1px] pb-1 border-amber-500 text-center self-center justify-self-center'
@@ -215,54 +214,66 @@ export default function Navbar(index) {
                         </Link>
                       ),
                     )}
-                    {isHovering ? (
-                      <>
-                        <NavHover
-                          title={`Dega`}
-                          className="rounded-t-md justify-self-center row-start-2 row-span-1 col-start-4 col-span-1 transition-d hover:scale-95 hover:text-sky-600"
-                          duration={0.5}
-                          delay={0.2}
-                          navigate="/brands/dega"
-                        />
-                        <NavHover
-                          title={`Fresco`}
-                          className="rounded-b-md justify-self-center row-start-3 row-span-1 col-start-4 col-span-1 transition-d hover:scale-95 hover:text-amber-400"
-                          duration={0.5}
-                          delay={0.3}
-                          navigate="/brands/freshco"
-                        />
-                      </>
-                    ) : (
-                      ''
-                    )}
+                    <div
+                      onMouseOver={handleMouseOver}
+                      onMouseOut={handleMouseOut}
+                      className={`transition-d justify-self-center row-start-2 row-span-2 col-start-4 col-span-1 grid grid-cols-1 grid-rows-[31px_31px] gap-y-[0.15rem]`}
+                    >
+                      {isHovering ? (
+                        <>
+                          <NavHover
+                            title={`Dega`}
+                            className="rounded-t-md justify-self-center row-start-1 row-span-1 col-start-4 col-span-1 transition-d hover:scale-95 hover:text-sky-600"
+                            duration={0.5}
+                            delay={0.2}
+                            navigate="/brands/dega"
+                          />
+                          <NavHover
+                            title={`Fresco`}
+                            className="rounded-b-md justify-self-center row-start-2 row-span-1 col-start-4 col-span-1 transition-d hover:scale-95 hover:text-amber-400"
+                            duration={0.5}
+                            delay={0.3}
+                            navigate="/brands/freshco"
+                          />
+                        </>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                     ,
-                    {isBlogHovering ? (
-                      <>
-                        <NavHover
-                          title={`News`}
-                          className="rounded-t-md justify-self-center row-start-2 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
-                          duration={0.5}
-                          delay={0.2}
-                          navigate="/blog"
-                        />
-                        <NavHover
-                          title={`Gallery`}
-                          className="rounded-none justify-self-center row-start-3 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
-                          duration={0.5}
-                          delay={0.3}
-                          navigate="/blog"
-                        />
-                        <NavHover
-                          title={`Blog`}
-                          className="rounded-b-md justify-self-center row-start-4 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
-                          duration={0.5}
-                          delay={0.4}
-                          navigate="/blog"
-                        />
-                      </>
-                    ) : (
-                      ''
-                    )}
+                    <div
+                      onMouseOver={handleBlogMouseOver}
+                      onMouseOut={handleMouseOut}
+                      className={`transition-d justify-self-center row-start-2 row-span-3 col-start-6 col-span-1 grid grid-cols-1 grid-rows-[31px_31px_31] gap-y-[0.15rem]`}
+                    >
+                      {isBlogHovering ? (
+                        <>
+                          <NavHover
+                            title={`News`}
+                            className="rounded-t-md justify-self-center row-start-1 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
+                            duration={0.5}
+                            delay={0.2}
+                            navigate="/blog"
+                          />
+                          <NavHover
+                            title={`Gallery`}
+                            className="rounded-none justify-self-center row-start-2 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
+                            duration={0.5}
+                            delay={0.3}
+                            navigate="/blog"
+                          />
+                          <NavHover
+                            title={`Blog`}
+                            className="rounded-b-md justify-self-center row-start-3 row-span-1 col-start-6 col-span-1 transition-d hover:scale-95"
+                            duration={0.5}
+                            delay={0.4}
+                            navigate="/blog"
+                          />
+                        </>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
